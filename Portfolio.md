@@ -19,15 +19,20 @@ There are a lot of frameworks to choose from, however. I cut this choice down to
 |  | **Vue.js** | **React** | **Angular** | **Svelte** |
 |:---:|:---:|:---:|:---:|:---:|
 | **Documentation** | Good documentation with examples and live sandbox to test code. 8/10 | Decent tutorials but proper documentation is lacking. 6/10 | Quite bad documentation, hard to find what you are looking for. 3/10 | Good documentation and examples. Also a fancy interactive tutorial. 9/10 |
-| **Complexity** | A bit complex at first and some code seems to add complexity for no reason. 6/10 |Not too complex and very readable. 8/10 | Most complex. Code seems unnecessarily complicated for even easy tasks. 4/10 | Not complex at all, can achieve the same as the other frameworks with less work/code while still being readable. 9/10 |
+| **Complexity** | A bit complex at first, but it's not a big deal. 7/10 |Not too complex and very readable. 8/10 | Most complex. Code seems unnecessarily complicated for even easy tasks. 4/10 | Not complex at all, can achieve the same as the other frameworks with less work/code while still being readable. 9/10 |
 | **Popularity** | Somewhat popular but slowly growing. 6/10 | Very popular and still growing. 10/10 | Quite popular but declining in use. 7/10 | Not very popular but rapidly growing 5/10 |
-|  |  |  |  |  |
-|  |  |  |  |  |
+| **Performance** | Good performance. 8/10 | Decent performance. 7/10 | Mediocre/poor performance. 5/10 | Amazing performance due to not requiring a virtual DOM. 9/10 |
+| **Learning curve** | Easy to learn. Would probably take a few days. 8/10 | Easy to learn, slightly easier than Vue. 8.5/10 | Hardest to learn. Could take multiple days or even a week to learn. 6/10 | Easiest to learn. Could probably learn in a day or two. 9/10 |
+
+After this I was still struggling with my choice, although I have now boiled it down to just Vue.js and Svelte.
+To make sure I make the right choice, I made the same demo-project in both Vue.js and Svelte.
+
+//TODO: insert demo's
 
 ### Backend
 For the backend, the language choice is between C# with the ASP.net (core) framework and Java with one of its many backend frameworks.
 
-I have quite a lot of experience with C# and ASP.net core. If I were to choose this language, I'd be able to make an app with more functionality while having to do less research as I would not have to learn a new language. In the other hand, however, I would really like to learn a new language instead of just making another backend with C# that would look virtually the same as last semester's. If I were to choose Java, I'd learn a new language which is very valuable. Doing this would mean I spend more time learning instead of just doing the same stuff I've already done twice. Java is also quite similar to C#, so it should not even take that long to get the hang of the language.
+I have quite a lot of experience with C# and ASP.net core. If I were to choose this language, I'd be able to make an app with more functionality while having to do less research as I would not have to learn a new language. On the other hand, however, I would really like to learn a new language instead of just making another backend with C# that would look virtually the same as last semester's. If I were to choose Java, I'd learn a new language which is very valuable. Doing this would mean I spend more time learning instead of just doing the same stuff I've already done twice. Java is also quite similar to C#, so it should not even take that long to get the hang of the language.
 
 All in all I'm leaning towards learning Java.
 
