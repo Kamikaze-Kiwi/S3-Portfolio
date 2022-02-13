@@ -27,7 +27,7 @@ There are a lot of frameworks to choose from, however. I cut this choice down to
 After this I was still struggling with my choice, although I have now boiled it down to just Vue.js and Svelte.
 To make sure I make the right choice, I made the same demo-project in both Vue.js and Svelte.
 
-//TODO: insert demo's
+After making a simple project that fetches some data from a public API in both frameworks, I decided to go with Vue.js. While I really like the simple syntax Svelte has, it's a lot simpler to have a multi-page application in Vue then it is in Svelte. There are also some kinks in Svelte (which I assume will be worked out in the future). One example of this is the fact that the reactiveness only works when you directly assign a variable, but not if you call a method on it like list.push().
 
 ### Backend
 For the backend, the language choice is between C# with the ASP.net (core) framework and Java with one of its many backend frameworks.
