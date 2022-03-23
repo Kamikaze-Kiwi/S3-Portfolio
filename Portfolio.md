@@ -12,8 +12,6 @@
 ## Technology choices
 
 ### Frontend
-For the frontend, the programming language does not have to be considered as the only programming language natively supported by all browsers is Javascript.
-
 There are a lot of frameworks to choose from, however. I cut this choice down to 4 frameworks. These are: React, Angular, Vue.js and Svelte. The reason I excluded other frameworks mostly boils down to the fact that most of them are very young and/or not widely used. This is a problem because it will be hard to find any information/tutorials. While Svelte is also a relatively young framework, I included it anyway because I've seen it praised a lot[<sup>[1]</sup>](https://insights.stackoverflow.com/survey/2021/?utm_source=social-share&utm_medium=social&utm_campaign=dev-survey-2021#most-loved-dreaded-and-wanted-webframe-love-dread)[<sup>[2]</sup>](https://2020.stateofjs.com/en-US/technologies/front-end-frameworks/).
 
 |  | **Vue.js** | **React** | **Angular** | **Svelte** |
