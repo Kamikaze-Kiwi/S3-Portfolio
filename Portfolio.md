@@ -2,14 +2,14 @@
 
 ## Table of contents
 
-1. [Languages and frameworks choice](#language-and-framework-choice) \
+1. [Technology choices](#technology-choices) \
   1.1 [Frontend](#frontend) \
   1.2 [Backend](#backend)
 2. [...](#portfolio)
 
 
 
-## Language and framework choice
+## Technology choices
 
 ### Frontend
 For the frontend, the programming language does not have to be considered as the only programming language natively supported by all browsers is Javascript.
