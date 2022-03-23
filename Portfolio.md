@@ -29,10 +29,12 @@ To make sure I make the right choice, I made the same demo-project in both Vue.j
 
 After making a simple project that fetches some data from a public API in both frameworks, I decided to go with Vue.js. While I really like the simple syntax Svelte has, it's a lot simpler to have a multi-page application in Vue then it is in Svelte. There are also some kinks in Svelte (which I assume will be worked out in the future). One example of this is the fact that the reactiveness only works when you directly assign a variable, but not if you call a method on it like list.push().
 
+I also made the decision to use Typescript instead of Javascript within Vue, because I find that developing with Javascript can become very cumbersome, especially when debugging something. Vue also simplifies the one problem I have with Typescript, which is the build process.
+
 ### Backend
 For the backend, the language choice is between C# with the ASP.net (core) framework and Java with one of its many backend frameworks.
 
 I have quite a lot of experience with C# and ASP.net core. If I were to choose this language, I'd be able to make an app with more functionality while having to do less research as I would not have to learn a new language. On the other hand, however, I would really like to learn a new language instead of just making another backend with C# that would look virtually the same as last semester's. If I were to choose Java, I'd learn a new language which is very valuable. Doing this would mean I spend more time learning instead of just doing the same stuff I've already done twice. Java is also quite similar to C#, so it should not even take that long to get the hang of the language.
 
-All in all I'm leaning towards learning Java.
+I made the decision to choose Java along with the Springboot framework, and Hibernate as the ORM.
 
