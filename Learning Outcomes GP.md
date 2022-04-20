@@ -34,6 +34,8 @@ I also worked on the heatmap together with Rick, which we made using HighCharts.
 | _^ A screenshot of the heatmap (with random mock data)_ |
 <br>
 
+Furthermore, I worked with Rens to receive the data from the MQTT broker and to send this data over to a database. We achieved this using a C# API which listens to the MQTT broker. Using this API it's also possible to view the current status of the API and the broker.
+
 ## 3. Agile method
 In the group project we use a [Notion](https://right-metacarpal-459.notion.site/Dashboard-S3-Groep-3-a0a557bce28b4c35ba0b1655da06f22f), which is an alternative to Trello. In here we have our roadmap, user stories, documents and more.
 
@@ -43,13 +45,13 @@ In the group project we use a [Notion](https://right-metacarpal-459.notion.site/
 <br>
 
 We also have (atleast) a stand-up and a stand-down every day so we always know what the other team members are currently working on and to review eachothers work. At the start of each sprint we select all the user stories that we want to work on for that sprint and divide them among us. At the end of each sprint we do a sprint review with the product owner and a sprint retrospective.
+<br>
 
 ## 5. Cultural differences and ethics
 
 
-
-
 ## 6. Requirements and design
+We asked for feedback on our products to ensure we created something which is as close as possible to whatever the product owner envisioned. We applied this feedback to better our products.
 
 
 ## 7. Business processes
