@@ -51,8 +51,8 @@ We also have (atleast) a stand-up and a stand-down every day so we always know w
 
 
 ## 6. Requirements and design
-We asked for feedback on our products to ensure we created something which is as close as possible to whatever the product owner envisioned. We applied this feedback to better our products.
-
+We asked for feedback on our products to ensure we created something which is as close as possible to whatever the stakeholder envisioned. We applied this feedback to better our products.
+<br>
 
 ## 7. Business processes
 
