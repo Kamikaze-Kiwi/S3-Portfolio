@@ -16,21 +16,37 @@ In the group project I made a distribution for which temperature should be displ
 
 | ![Temperature distribution](https://user-images.githubusercontent.com/84376526/164173973-db06c558-5d59-44df-9334-74948ea69a36.png) |
 | :--: |
-| ^ Heatmap temperature distribution |
+| _^ Heatmap temperature distribution_ |
+<br>
 
 ### - Full-stack
 In the group project I worked on a frontend to display temperature/humidity data using Vue.js. We ended up scrapping this idea, however, after a meeting with the project-leader.
 
 | ![Scrapped temperature graph](https://user-images.githubusercontent.com/84376526/164178056-6cdd4ee0-010f-4573-8060-79f1133a649e.png) |
 | :--: |
-| ^ One of the (dynamic) graphs I made using HighCharts + Vue.js. |
-  
+| _^ One of the (dynamic) graphs I made using HighCharts + Vue.js._ |
+<br>
+
+I also worked on the heatmap together with Rick, which we made using HighCharts.
+
+| ![heatmap sample](https://user-images.githubusercontent.com/84376526/164218604-12e747b5-59e9-40fd-8d77-144b33c58337.png) |
+| :--: |
+| _^ A screenshot of the heatmap (with random mock data)_ |
+<br>
 
 ## 3. Agile method
-In the group project we use a [Notion](https://right-metacarpal-459.notion.site/Dashboard-S3-Groep-3-a0a557bce28b4c35ba0b1655da06f22f), which is an alternative to Trello. In here we have our roadmap, user stories, documents and more. 
+In the group project we use a [Notion](https://right-metacarpal-459.notion.site/Dashboard-S3-Groep-3-a0a557bce28b4c35ba0b1655da06f22f), which is an alternative to Trello. In here we have our roadmap, user stories, documents and more.
 
+
+
+
+| ![User stories sample](https://user-images.githubusercontent.com/84376526/164202907-e209347f-5025-4966-9314-caedc814cf5c.png)   | ![notion roadmap sample](https://user-images.githubusercontent.com/84376526/164204103-0b2dc7c2-1c76-458f-ba72-f82149340b52.png)   |
+|------|------|
+| _^ A small sample of our user stories. | ^ A small sample of our roadmap, with each entry containing more details and a definition of done when pressed._ |
+<br>
 
 ## 5. Cultural differences and ethics
+
 
 
 
