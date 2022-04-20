@@ -39,10 +39,10 @@ In the group project we use a [Notion](https://right-metacarpal-459.notion.site/
 
 | ![User stories sample](https://user-images.githubusercontent.com/84376526/164202907-e209347f-5025-4966-9314-caedc814cf5c.png)   | ![notion roadmap sample](https://user-images.githubusercontent.com/84376526/164204103-0b2dc7c2-1c76-458f-ba72-f82149340b52.png)   |
 |------|------|
-| _^ A small sample of our user stories. | ^ A small sample of our roadmap, with each entry containing more details and a definition of done when pressed._ |
+| _^ A small sample of our user stories._ | _^ A small sample of our roadmap, with each entry containing more details and a definition of done when pressed._ |
 <br>
 
-We also have (atleast) a stand-up and a stand-down every day so we always know what the other team members are currently working on and to review eachothers work.
+We also have (atleast) a stand-up and a stand-down every day so we always know what the other team members are currently working on and to review eachothers work. At the start of each sprint we select all the user stories that we want to work on for that sprint and divide them among us. At the end of each sprint we do a sprint review with the product owner and a sprint retrospective.
 
 ## 5. Cultural differences and ethics
 
