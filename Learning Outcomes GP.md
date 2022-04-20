@@ -24,7 +24,7 @@ In the group project I worked on a frontend to display temperature/humidity data
 
 | ![Scrapped temperature graph](https://user-images.githubusercontent.com/84376526/164178056-6cdd4ee0-010f-4573-8060-79f1133a649e.png) |
 | :--: |
-| _^ One of the (dynamic) graphs I made using HighCharts + Vue.js._ |
+| _^ One of the (dynamic) graphs I made using HighCharts + Vue.js (with random mock data). _ |
 <br>
 
 I also worked on the heatmap together with Rick, which we made using HighCharts.
@@ -58,3 +58,8 @@ We asked for feedback on our products to ensure we created something which is as
 
 
 ## 8. Professional
+As described in [3. Agile method](#3-agile-method), we commit ourselves to the scrum methodology as we hold daily stand-ups and stand-downs, as well as sprint reviews etc.
+
+I always try to communicate professionally and in a timely manner with my group members, as well as with the product owners. For example if I'm unable to make it or if I'm a bit later. I also communicate well about the project itself, by asking for help whenever I require it and also by offering my help to whoever needs it.
+
+Whenever a group member is unable to join in with the daily stand-up/stand-down, we make sure it is possible to join the meeting virtually, so they will still be able to track our progress as well as share their own.
