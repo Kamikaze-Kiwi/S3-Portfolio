@@ -2,12 +2,12 @@
 
 ## Table of contents
 
-1. [Web application](#1-web-application)
-3. [Agile method](#3-agile-method)
-5. [Cultural differences and ethics](#5-cultural-differences-and-ethics)
-6. [Requirements and design](#6-requirements-and-design)
-7. [Business processes](#7-business-processes)
-8. [Professional](#8-professional)
+- 1.[ Web application](#1-web-application)
+- 3.[ Agile method](#3-agile-method) 
+- 5.[ Cultural differences and ethics](#5-cultural-differences-and-ethics)
+- 6.[ Requirements and design](#6-requirements-and-design)
+- 7.[ Business processes](#7-business-processes)
+- 8.[ Professional](#8-professional)
 
 
 ## 1. Web application
@@ -37,13 +37,12 @@ I also worked on the heatmap together with Rick, which we made using HighCharts.
 ## 3. Agile method
 In the group project we use a [Notion](https://right-metacarpal-459.notion.site/Dashboard-S3-Groep-3-a0a557bce28b4c35ba0b1655da06f22f), which is an alternative to Trello. In here we have our roadmap, user stories, documents and more.
 
-
-
-
 | ![User stories sample](https://user-images.githubusercontent.com/84376526/164202907-e209347f-5025-4966-9314-caedc814cf5c.png)   | ![notion roadmap sample](https://user-images.githubusercontent.com/84376526/164204103-0b2dc7c2-1c76-458f-ba72-f82149340b52.png)   |
 |------|------|
 | _^ A small sample of our user stories. | ^ A small sample of our roadmap, with each entry containing more details and a definition of done when pressed._ |
 <br>
+
+We also have (atleast) a stand-up and a stand-down every day so we always know what the other team members are currently working on and to review eachothers work.
 
 ## 5. Cultural differences and ethics
 
