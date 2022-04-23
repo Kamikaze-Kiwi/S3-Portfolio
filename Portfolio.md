@@ -20,7 +20,7 @@ There are a lot of frameworks to choose from, however. I cut this choice down to
 | **Complexity** | A bit complex at first, but it's not a big deal. 7/10 |Not too complex and very readable. 8/10 | Most complex. Code seems unnecessarily complicated for even easy tasks. 4/10 | Not complex at all, can achieve the same as the other frameworks with less work/code while still being readable. 9/10 |
 | **Popularity** | Somewhat popular but slowly growing. 6/10 | Very popular and still growing. 10/10 | Quite popular but declining in use. 7/10 | Not very popular but rapidly growing 5/10 |
 | **Performance** | Good performance. 8/10 | Decent performance. 7/10 | Mediocre/poor performance. 5/10 | Amazing performance due to not requiring a virtual DOM. 9/10 |
-| **Learning curve** | Easy to learn. Would probably take a few days. 8/10 | Easy to learn, slightly easier than Vue. 8.5/10 | Hardest to learn. Could take multiple days or even a week to learn. 6/10 | Easiest to learn. Could probably learn in a day or two. 9/10 |
+| **Learning curve** | Easy to learn. Would probably take a few days to get the basics down. 8/10 | Easy to learn, slightly easier than Vue. 8.5/10 | Hardest to learn. Could take multiple days or even a week just to get the basics down. 6/10 | Easiest to learn. Could probably get the basics within a day or two. 9/10 |
 
 After this I was still struggling with my choice, although I have now boiled it down to just Vue.js and Svelte.
 To make sure I make the right choice, I made the same demo-project in both Vue.js and Svelte.
