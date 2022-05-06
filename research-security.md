@@ -35,16 +35,36 @@ So we have to do something with the password to make it unreadable.
 
 Hashing is a one-way algorithm that converts a readable, plaintext string into an unreadable representation of said string. There are many hashing algorithms out there, like the popular MD5, SHA-1 or the SHA-2 family. While these are still widely used, they are not meant for storing passwords. MD5 and SHA-1 have both been cryptographically broken <sup> [[MD5]](https://en.wikipedia.org/wiki/MD5) [[SHA-1]](https://en.wikipedia.org/wiki/SHA-1)</sup> while all of them are made to be fast (which may seem like a good thing, but password hashing algorithms should be slow, I will return to this later). For these reasons, these types of hashing algorithms should only be used for their intended goal, verifying the integrity of files. There are some hashing algorithms made with the specific goal of hashing passwords, like Argon2. Argon2 won the [password hashing competition](https://www.password-hashing.net/) and enjoys a lot of praise in online discussions and articles. After comparing it to other password specific hashing algorithms I found that Argon2 is infact one of the best solutions out there currently, although it is likely this will change in a few years time, as better algorithms are constantly being developed.
 
-However, this is not entirely secure yet. Hackers can use a rainbow table to quickly get most of the passwords from a database. A rainbow table is an enormous file containing billions of combinations of plaintext passwords along with their hashed representation. While these tables can take extremely long to initially generate, it would allow hackers to extract millions of hashed passwords from a database in mere seconds.
+#
+
+| **User** | **Password (Not stored)** | **Hash**         |
+|----------|---------------------------|------------------|
+| Jim      | Password123               | ca8b9d3867664f22 |
+| Tim      | Password123               | ca8b9d3867664f22 |
+| Bob      | 23k4gu28kj14#@uy!         | f36988f65cacd2b3 |
+| John     | Oof                       | 3c7022f8fad45921 |
+
+^ What the database would look like now. note how the hash is always the same length no matter the length of the password. Also note that Jim and Tim, who have the same password, have the same hash. The second row is not stored. While you can't see the password in the blink of an eye, it's still very easy to retrieve the passwords. The easiest way would be to use a rainbow table (assuming one exists). A rainbow table is an enormous file containing every possible (plaintext) password along with their hashed representation. This would allow the hacker to get every password nearly instantly. 
 
 <br>    
 <hr>
 
 ## Salting
 
-A salt is a randomly generated string added to the hash. This salt is then also stored in the database along with the hashed password. 
+A salt is a randomly generated string added to the password before it is hashed. This salt is then also stored in the database along with the hashed password. This makes rainbow tables completely useless. An added bonus is that if multiple users have the same password, they will still have a different hash.
 
-We can add a unique, randomly generated string to the hash. We store this salt along with the hashed password in the database. Now whenever we convert a password into its hashed variant, we first add this salt to the front or the end of the password. This takes rainbow tables out of the equation. It also ensures that even when 2 users have the same password, they will still have different hashes.
+#
+
+| **User** | **Password (Not stored)** | **Hash**         | **Salt**         |
+|----------|---------------------------|------------------|------------------|
+| Jim      | Password123               | 28dfe5cd7788a848 | 0HlZLASHl3GWBsUa |
+| Tim      | Password123               | 7d5d0d11d9e15d19 | n68yVxfJpW1rR4vz |
+| Bob      | 23k4gu28kj14#@uy!         | ab25635f7254b7f1 | nm68iO9ycJi9fbDl |
+| John     | Oof                       | 0940c9263442c338 | dw5VSheLlSqPXVh4 |
+
+^ What the database would look like now. Note that Jim and Tim now have different hashes, even though they have the same password. Now it is only possible to crack the passwords from this database by brute-forcing it. A hacker can test every possible password using the salt of one of the users, until the generated hash matches the hash in the database. John's password would be cracked within seconds, Jim and Tim's passwords will take a little longer and John's password will either never be cracked if the hacker did not include special characters in the brute force or after a decently long (but not crazy) amount of time. I will look into combatting brute force attacks [later](#combatting-brute-force-attacks).
+
+To speed up the brute force process, hackers can perform a dictionary attack instead. A dictionary attack does not try every possible password combination, but instead uses (for example) a literal dictionary containing every word in English along with variations on those words **or** a list of common passwords, like from the RockYou leak I mentioned earlier. Let's say the hacker uses a list of common passwords. Jim, Tim and John's passwords would be cracked very quickly while Bob's password will never be cracked. This is why it's important to have a unique password that's not just a (variation of) a word.
 
 <br>    
 <hr>
@@ -69,20 +89,16 @@ For this reason, it's ***almost*** always better to hash passwords instead of en
 
 ## Combatting brute force attacks
 
-In a brute force attack a hacker tries every possible password combination until they find the correct one. To shorten this process, hackers will often use dictionary attacks, using a literal dictionary of all words in the English alphabet or using a big file with common passwords. 
+While there is no way to completely block brute force attacks, I can make it take so long to crack passwords so that it just is not worth it.
 
-As the developer there is not much you can do to stop these types of attacks, but you can make it take so long that it just is not worth it. For starters, you can hash a password multiple times to increase the computation time. Ofcourse, you can't make it take too long, as regular users will suffer from that. 
+#
 
-**Other countermeasures include:** 
-- Temporarily locking a user's account if there are a lot of failed login attempts in a short period of time, but this allows hackers to launch a DoS attack by locking out every user's account.
-- Automatically temporarily blocking the IP of a suspected brute force attacker, but the hacker can circumvent this by constantly switching IP. This also has the risk of entire office buildings being blocked because one person thought it was funny to spam the login form.
+The first thing I can do is make it take longer to try a password.
 
-**These countermeasures are not worth the trouble they may cause, so it's better to implement these instead:**
-- Add a Captcha to the login form to block bots.
-- Block a device/browser specifically when it is suspected of brute forcing.
+To achieve this, I can repeatedly call the hashing function, instead of just once, so I will first hash the password, then hash that hash, and do that over and over again. If a hashing function normally takes about 0.1 seconds to execute, that means a hacker can test 10 passwords per second. If I do it with 10 iterations instead, the hacker can only test 1 password per second. The more iterations I do, the safer the passwords will be. But I have to find a balance between blocking hackers and giving the users a fast-working application. I personally went with 10 iterations as I found that it takes about a 800 ms (on my hardware) which seems like a good compromise. When hardware gets better in the future I can always increase the iterations.
 
-<br>
+#
 
-**But the number one way to stop hackers from gaining access to your user's passwords using a brute force attack is:**
-- Making sure your users use unique and difficult passwords.
+The second thing I can do is make it take more attempts before a password is cracked.
 
+This can be achieved simply by forcing users to use stronger passwords. I can force them to be a certain length, require capital and lowercase letters, require a number, require a special character, etc.
