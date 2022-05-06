@@ -35,6 +35,8 @@ So we have to do something with the password to make it unreadable.
 
 Hashing is a one-way algorithm that converts a readable, plaintext string into an unreadable representation of said string. There are many hashing algorithms out there, like the popular MD5, SHA-1 or the SHA-2 family. While these are still widely used, they are not meant for storing passwords. MD5 and SHA-1 have both been cryptographically broken <sup> [[MD5]](https://en.wikipedia.org/wiki/MD5) [[SHA-1]](https://en.wikipedia.org/wiki/SHA-1)</sup> while all of them are made to be fast (which may seem like a good thing, but password hashing algorithms should be slow, I will return to this later). For these reasons, these types of hashing algorithms should only be used for their intended goal, verifying the integrity of files. There are some hashing algorithms made with the specific goal of hashing passwords, like Argon2. Argon2 won the [password hashing competition](https://www.password-hashing.net/) and enjoys a lot of praise in online discussions and articles. After comparing it to other password specific hashing algorithms I found that Argon2 is infact one of the best solutions out there currently, although it is likely this will change in a few years time, as better algorithms are constantly being developed.
 
+There are 2 main libraries in Java for using Argon2. Argon2-jvm and the built in Argon2 from Spring security. As I am using spring for my project anyway, I decided to go with the Spring security solution.
+
 #
 
 | **User** | **Password (Not stored)** | **Hash**         |
