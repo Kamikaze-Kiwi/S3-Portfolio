@@ -46,7 +46,7 @@ There are 2 main libraries in Java for using Argon2. Argon2-jvm and the built in
 | Bob      | 23k4gu28kj14#@uy!         | f36988f65cacd2b3 |
 | John     | Oof                       | 3c7022f8fad45921 |
 
-^ What the database would look like now. note how the hash is always the same length no matter the length of the password. Also note that Jim and Tim, who have the same password, have the same hash. The second row is not stored. While you can't see the password in the blink of an eye, it's still very easy to retrieve the passwords. The easiest way would be to use a rainbow table (assuming one exists). A rainbow table is an enormous file containing every possible (plaintext) password along with their hashed representation. This would allow the hacker to get every password nearly instantly. 
+^ What the database would look like now. note how the hash is always the same length no matter the length of the password. Also note that Jim and Tim, who have the same password, have the same hash. The second row is not stored. While you can't see the password in the blink of an eye, it's still very easy to retrieve the passwords. The easiest way would be to use a rainbow table (assuming one exists). A rainbow table is an enormous file containing every possible (plaintext) password along with their hashed representation. This would allow the hacker to get every password nearly instantly.
 
 <br>    
 <hr>
@@ -91,7 +91,7 @@ For this reason, it's ***almost*** always better to hash passwords instead of en
 
 ## Combatting brute force attacks
 
-While there is no way to completely block brute force attacks, I can make it take so long to crack passwords so that it just is not worth it.
+While there is no way to completely block brute force attacks, I can make it take *so* long to crack passwords that it just is not worth it.
 
 #
 
@@ -103,4 +103,4 @@ To achieve this, I can repeatedly call the hashing function, instead of just onc
 
 The second thing I can do is make it take more attempts before a password is cracked.
 
-This can be achieved simply by forcing users to use stronger passwords. I can force them to be a certain length, require capital and lowercase letters, require a number, require a special character, etc.
+This can be achieved simply by forcing users to use stronger passwords. I can force them to be a certain length, require capital and lowercase letters, require a number, require a special character, etc. I can also check if the user's entered password is within a list of the *n* most common passwords, although this is redundant if I am already forcing the usage of a special character, as the top 10000 most common passwords don't contain a single special character anyway.
