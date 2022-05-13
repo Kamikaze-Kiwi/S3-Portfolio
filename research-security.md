@@ -15,7 +15,7 @@
 
 ## Introduction
 
-Having an extremely secure authentication system is of utmost importance. I could just use one of the many great authentication systems out there like Auth0 or oAuth2, however I want to know what goes on behind the scenes. Last semester I already made an authentication system, but I chose not to invest more than 10 minutes in the security. I hashed the password with Sha256 and that was it. When I pasted some of the hashes into Google, I could immediately see what the original password was, and something's telling me that's not quite as safe as it should be.
+Having an extremely secure authentication system is extremely important. I could just use one of the many great authentication systems out there like Auth0 or oAuth2, however I want to know what goes on behind the scenes. Last semester I already made an authentication system, but I chose not to invest more than 10 minutes in the security. I hashed the password with Sha256 and that was it. When I pasted some of the hashes into Google, I could immediately see what the original password was, and something's telling me that's not quite as safe as it should be.
 
 To ensure that the methods I will use to handle the storing the passwords are ***really*** secure, we will assume that the hacker knows everything about my system and has access to the source code.
 
