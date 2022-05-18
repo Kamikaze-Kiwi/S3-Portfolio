@@ -19,10 +19,17 @@
 
 ## Repositories
 
-[Frontend repository](https://github.com/MaikelHendrikx1/Bugger_Frontend)
+### Frontend repositories
 
-[Backend repository](https://github.com/MaikelHendrikx1/Bugger_Backend)
+[Vue web application](https://github.com/MaikelHendrikx1/Bugger_Frontend)
 
+### Backend repositories
+
+[Account microservice](https://github.com/MaikelHendrikx1/account)
+
+[Bug report microservice](https://github.com/MaikelHendrikx1/bugreport)
+
+[Bugger page microservice](https://github.com/MaikelHendrikx1/buggerpage)
 
 ## The idea
 
