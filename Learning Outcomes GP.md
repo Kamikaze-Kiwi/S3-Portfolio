@@ -49,6 +49,31 @@ We also have (atleast) a stand-up and a stand-down every day so we always know w
 
 ## 5. Cultural differences and ethics
 
+## Ethics
+
+### What is ethics in software engineering?
+
+###  Why is ethics important in software engineering?
+
+###  What do you have to do as a software engineer to address ethical aspects in your work?
+
+###  How do you know that your ethical considerations match with those of other software engineers?
+
+### Which ethical aspects play a role in your project?
+
+### Do you foresee ethical conflicts caused by your software? What kind of?
+
+
+## Culture
+
+### What is culture?
+
+### Which are well-known dimensions on cultural differences?
+
+### Can you give examples for cultural differences that you have experienced in your study or life? How do you explain these differences?
+
+### What is your culture?
+
 ## 6. Requirements and design
 We asked for feedback on our products to ensure we created something which is as close as possible to whatever the stakeholder envisioned. We applied this feedback to better our products.
 <br>
