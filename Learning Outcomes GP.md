@@ -24,7 +24,7 @@ In the group project I worked on a frontend to display temperature/humidity data
 
 | ![Scrapped temperature graph](https://user-images.githubusercontent.com/84376526/164178056-6cdd4ee0-010f-4573-8060-79f1133a649e.png) |
 | :--: |
-| _^ One of the (dynamic) graphs I made using HighCharts + Vue.js (with random mock data). _ |
+| _^ One of the (dynamic) graphs I made using HighCharts + Vue.js (with random mock data)._ |
 <br>
 
 I also worked on the heatmap together with Rick, which we made using HighCharts.
@@ -49,12 +49,14 @@ We also have (atleast) a stand-up and a stand-down every day so we always know w
 
 ## 5. Cultural differences and ethics
 
-
 ## 6. Requirements and design
 We asked for feedback on our products to ensure we created something which is as close as possible to whatever the stakeholder envisioned. We applied this feedback to better our products.
 <br>
 
 ## 7. Business processes
+| ![Business process](https://user-images.githubusercontent.com/84376526/169815643-b14fc448-b26b-4365-bfe7-6d9445a06598.png) |
+| :--: |
+| _^ The business process for a hypothetical order picking process. We chose this hypothetical process because we found it difficult to visualize a process for our group project. After discussing this with Marc we came to the conclusion that we should use another business or a hypothetical business to visualize a process instead. We chose an order picking business because Rens does orderpicking for his job, while Rick is creating an orderpicking system for his individual project. <hr> We created this using Engage Process Modeler, as we already had experience with this tool from the first semester._ |
 
 
 ## 8. Professional
