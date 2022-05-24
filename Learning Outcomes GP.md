@@ -14,9 +14,9 @@
 ### - User-friendly
 In the group project I made a distribution for which temperature should be displayed in which colour on the heatmap. To achieve this I initially used my own preferences, and then I consulted the other group members for some minor adjustments.
 
-| ![Temperature distribution](https://user-images.githubusercontent.com/84376526/164173973-db06c558-5d59-44df-9334-74948ea69a36.png) |
-| :--: |
-| _^ Heatmap temperature distribution_ |
+| ![Temperature distribution](https://user-images.githubusercontent.com/84376526/164173973-db06c558-5d59-44df-9334-74948ea69a36.png) | ![temperature distribution new](https://user-images.githubusercontent.com/84376526/170005293-0eab2076-a945-45a1-bf73-2fc67f1d3f77.png) |
+|:--:|:--:|
+| _^ Heatmap temperature distribution_ | _^ The heatmap temperature distribution after some changes. Notice how the green part is much smaller._ |
 <br>
 
 ### - Full-stack
@@ -35,6 +35,13 @@ I also worked on the heatmap together with Rick, which we made using HighCharts.
 <br>
 
 Furthermore, I worked with Rens to receive the data from the MQTT broker and to send this data over to a database. We achieved this using a C# API which listens to the MQTT broker. Using this API it's also possible to view the current status of the API and the broker.
+
+<br>
+
+In the last few weeks I spent most of my time making the heatmap reactive: 
+- by adding the ability to change change the time/day and request the new data from the backend.
+- by adding the ability to share a specific date/timestamp and floor using the URL (which is constantly updated) or by using the share button.
+- by adding the ability to change floors (and also changing the background of the floor).
 
 <br>
 
