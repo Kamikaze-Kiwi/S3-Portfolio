@@ -76,6 +76,10 @@ We also have (atleast) a stand-up and a stand-down every day so we always know w
 
 ## 6. Requirements and design
 We asked for feedback on our products to ensure we created something which is as close as possible to whatever the stakeholder envisioned. We applied this feedback to better our products. We try to have a meeting with the stakeholder once a week, this means that we get constant feedback on our products which ensures we never spend a lot of time on something that the stakeholder doesn't like.
+
+In the group we discussed almost every design choice we made. For example, we had a big discussion about how to allow the user to switch floors. We considered another (vertical) slider on the left of the heatmap, but we decided not to do this as the page would become too crowded 
+![verdieping](https://user-images.githubusercontent.com/84376526/169983528-b1295fe0-1e64-4979-97e1-2f0fd5b17ad3.png)
+
 <br>
 
 ## 7. Business processes
@@ -83,6 +87,7 @@ We asked for feedback on our products to ensure we created something which is as
 | :--: |
 | _^ The business process for a hypothetical order picking process. We chose this hypothetical process because we found it difficult to visualize a process for our group project. After discussing this with Marc we came to the conclusion that we should use another business or a hypothetical business to visualize a process instead. We chose an order picking business because Rens does orderpicking for his job, while Rick is creating an orderpicking system for his individual project. <hr> We created this using Engage Process Modeler, as we already had experience with this tool from the first semester._ |
 
+<br>
 
 ## 8. Professional
 As described in [3. Agile method](#3-agile-method), we commit ourselves to the scrum methodology as we hold daily stand-ups and stand-downs, as well as sprint reviews etc.
