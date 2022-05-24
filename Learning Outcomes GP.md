@@ -36,6 +36,8 @@ I also worked on the heatmap together with Rick, which we made using HighCharts.
 
 Furthermore, I worked with Rens to receive the data from the MQTT broker and to send this data over to a database. We achieved this using a C# API which listens to the MQTT broker. Using this API it's also possible to view the current status of the API and the broker.
 
+<br>
+
 ## 3. Agile method
 In the group project we use a [Notion](https://right-metacarpal-459.notion.site/Dashboard-S3-Groep-3-a0a557bce28b4c35ba0b1655da06f22f), which is an alternative to Trello. In here we have our roadmap, user stories, documents and more.
 
@@ -45,40 +47,47 @@ In the group project we use a [Notion](https://right-metacarpal-459.notion.site/
 <br>
 
 We also have (atleast) a stand-up and a stand-down every day so we always know what the other team members are currently working on and to review eachothers work. At the start of each sprint we select all the user stories that we want to work on for that sprint and divide them among us. At the end of each sprint we do a sprint review with the product owner and a sprint retrospective.
+
 <br>
 
 ## 5. Cultural differences and ethics
 
-## Ethics
+### Ethics
 
-### What is ethics in software engineering?
+#### What is ethics in software engineering?
 
-###  Why is ethics important in software engineering?
+####  Why is ethics important in software engineering?
 
-###  What do you have to do as a software engineer to address ethical aspects in your work?
+####  What do you have to do as a software engineer to address ethical aspects in your work?
 
-###  How do you know that your ethical considerations match with those of other software engineers?
+####  How do you know that your ethical considerations match with those of other software engineers?
 
-### Which ethical aspects play a role in your project?
+#### Which ethical aspects play a role in your project?
 
-### Do you foresee ethical conflicts caused by your software? What kind of?
+#### Do you foresee ethical conflicts caused by your software? What kind of?
 
+<br>
 
-## Culture
+### Culture
 
-### What is culture?
+#### What is culture?
 
-### Which are well-known dimensions on cultural differences?
+#### Which are well-known dimensions on cultural differences?
 
-### Can you give examples for cultural differences that you have experienced in your study or life? How do you explain these differences?
+#### Can you give examples for cultural differences that you have experienced in your study or life? How do you explain these differences?
 
-### What is your culture?
+#### What is your culture?
+
+<br>
 
 ## 6. Requirements and design
 We asked for feedback on our products to ensure we created something which is as close as possible to whatever the stakeholder envisioned. We applied this feedback to better our products. We try to have a meeting with the stakeholder once a week, this means that we get constant feedback on our products which ensures we never spend a lot of time on something that the stakeholder doesn't like.
 
-In the group we discussed almost every design choice we made. For example, we had a big discussion about how to allow the user to switch floors. We considered another (vertical) slider on the left of the heatmap, but we decided not to do this as the page would become too crowded 
-![verdieping](https://user-images.githubusercontent.com/84376526/169983528-b1295fe0-1e64-4979-97e1-2f0fd5b17ad3.png)
+In the group we discussed almost every design choice we made. For example, we had a big discussion about how to allow the user to switch floors. We considered another (vertical) slider on the left of the heatmap, but we decided not to do this as the page would become too crowded and unclear. We also considered putting an arrow button on both sides of the heatmap to change floor, but we threw away this idea as well, for the same reason as before but also because floors are ontop of eachother, and not side to side. We eventually agreed on a simple dropdown containing all the floors, with 2 buttons on the side with one arrow pointing up and one arrow pointing down, as seen in the image below. 
+
+| ![verdieping](https://user-images.githubusercontent.com/84376526/169983528-b1295fe0-1e64-4979-97e1-2f0fd5b17ad3.png) |
+| :--: |
+| _^ The input for changing floors in the heatmap. This input is found under the bottom-right of the heatmap._ |
 
 <br>
 
