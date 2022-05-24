@@ -75,7 +75,7 @@ We also have (atleast) a stand-up and a stand-down every day so we always know w
 ### What is your culture?
 
 ## 6. Requirements and design
-We asked for feedback on our products to ensure we created something which is as close as possible to whatever the stakeholder envisioned. We applied this feedback to better our products.
+We asked for feedback on our products to ensure we created something which is as close as possible to whatever the stakeholder envisioned. We applied this feedback to better our products. We try to have a meeting with the stakeholder once a week, this means that we get constant feedback on our products which ensures we never spend a lot of time on something that the stakeholder doesn't like.
 <br>
 
 ## 7. Business processes
@@ -90,3 +90,5 @@ As described in [3. Agile method](#3-agile-method), we commit ourselves to the s
 I always try to communicate professionally and in a timely manner with my group members, as well as with the product owners. For example if I'm unable to make it or if I'm a bit later. I also communicate well about the project itself, by asking for help whenever I require it and also by offering my help to whoever needs it.
 
 Whenever a group member is unable to join in with the daily stand-up/stand-down, we make sure it is possible to join the meeting virtually, so they will still be able to track our progress as well as share their own.
+
+In the earlier meetings I did not talk a lot during meetings with the stakeholder, and also meetings with the rest of the group. During the semester I worked on this and now I feel like I am able to sufficiently contribute in the meetings.
