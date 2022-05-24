@@ -17,6 +17,9 @@ In the group project I made a distribution for which temperature should be displ
 | ![Temperature distribution](https://user-images.githubusercontent.com/84376526/164173973-db06c558-5d59-44df-9334-74948ea69a36.png) | ![temperature distribution new](https://user-images.githubusercontent.com/84376526/170005293-0eab2076-a945-45a1-bf73-2fc67f1d3f77.png) |
 |:--:|:--:|
 | _^ Heatmap temperature distribution_ | _^ The heatmap temperature distribution after some changes. Notice how the green part is much smaller._ |
+
+{add heatmap before and heatmap after to highlight difference}
+
 <br>
 
 ### - Full-stack
@@ -36,12 +39,16 @@ I also worked on the heatmap together with Rick, which we made using HighCharts.
 
 Furthermore, I worked with Rens to receive the data from the MQTT broker and to send this data over to a database. We achieved this using a C# API which listens to the MQTT broker. Using this API it's also possible to view the current status of the API and the broker.
 
+{add image of api}
+
 <br>
 
 In the last few weeks I spent most of my time making the heatmap reactive: 
 - by adding the ability to change change the time/day and request the new data from the backend.
 - by adding the ability to share a specific date/timestamp and floor using the URL (which is constantly updated) or by using the share button.
 - by adding the ability to change floors (and also changing the background of the floor).
+
+{add image of reactive heatmap}
 
 <br>
 
@@ -95,6 +102,8 @@ In the group we discussed almost every design choice we made. For example, we ha
 We also considered putting an arrow button on both sides of the heatmap to change floor, but we threw away this idea as well, for the same reason as before but also because floors are ontop of eachother, and not side to side. 
 
 Another idea we had was to have a bunch of radio buttons (in a layout similar to the one found in elevators) for switching floors (we even considered having elevator doors closing over the heatmap, and open again once the data for this floor gets loaded). We scrapped this idea too, however, as it was unnecessarily complex, and if you have a lot of floors it would become very disorganised very quickly. 
+
+{add bullet list instead of these ideas, and add pictures of designs we threw away}
 
 We eventually agreed on a simple dropdown containing all the floors, with 2 buttons on the side with one arrow pointing up and one arrow pointing down, as seen in the image below. 
 
