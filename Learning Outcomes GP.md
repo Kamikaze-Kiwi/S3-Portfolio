@@ -14,11 +14,10 @@
 ### - User-friendly
 In the group project I made a distribution for which temperature should be displayed in which colour on the heatmap. To achieve this I initially used my own preferences, and then I consulted the other group members for some minor adjustments.
 
-| ![Temperature distribution](https://user-images.githubusercontent.com/84376526/164173973-db06c558-5d59-44df-9334-74948ea69a36.png) | ![temperature distribution new](https://user-images.githubusercontent.com/84376526/170005293-0eab2076-a945-45a1-bf73-2fc67f1d3f77.png) |
+| ![oldDistributionMap](https://user-images.githubusercontent.com/84376526/170819348-5b5a2c66-a47c-492b-9966-7a509bcdd414.png) | ![newDistributionMap](https://user-images.githubusercontent.com/84376526/170819353-17ceb54e-9689-41ac-8da8-8f2767b577c1.png) |
 |:--:|:--:|
-| _^ Heatmap temperature distribution_ | _^ The heatmap temperature distribution after some changes. Notice how the green part is much smaller._ |
-
-{add heatmap before and heatmap after to highlight difference}
+| ![Temperature distribution](https://user-images.githubusercontent.com/84376526/164173973-db06c558-5d59-44df-9334-74948ea69a36.png) | ![temperature distribution new](https://user-images.githubusercontent.com/84376526/170005293-0eab2076-a945-45a1-bf73-2fc67f1d3f77.png) |
+| _^ Initial heatmap temperature distribution. The entire heatmap is mostly green, even though the temperatures vary wildly (from 20.8 to 24.6)._ | _^ The heatmap temperature distribution after some changes. The heatmap now properly shows the hotter areas._ |
 
 <br>
 
@@ -39,16 +38,13 @@ I also worked on the heatmap together with Rick, which we made using HighCharts.
 
 Furthermore, I worked with Rens to receive the data from the MQTT broker and to send this data over to a database. We achieved this using a C# API which listens to the MQTT broker. Using this API it's also possible to view the current status of the API and the broker.
 
-{add image of api}
-
 <br>
 
 In the last few weeks I spent most of my time making the heatmap reactive: 
-- by adding the ability to change change the time/day and request the new data from the backend.
-- by adding the ability to share a specific date/timestamp and floor using the URL (which is constantly updated) or by using the share button.
-- by adding the ability to change floors (and also changing the background of the floor).
 
-{add image of reactive heatmap}
+| ![Heatmap Tools](https://user-images.githubusercontent.com/84376526/170819986-ebe25d4a-117b-43f5-9266-9fabd2414830.png) |
+| :-- |
+| <ul><li>Top left: the ability to select a date and update the heatmap. Also a button that goes to the current date/time.</li><li>Right beside the datepicker: a label that shows the currently selected time.</li><li>Beside the time label: a button that opens a popup that allows you to copy a url, so anyone who visits this link automatically goes to the datetime you had selected when you pressed share. </li><li>Top right: a dropdown with 2 buttons to pick a floor or go to the next/previous floor. This automatically updates the background image aswell.</li><li>Bottom: a slider to select a time. You can't surpass the current time (if you are on today). </li><li>Changing the date, time or floor will update the URL (without refreshing the page), so you can also share the URL by copying it from the address bar.</li></ul>|
 
 <br>
 
