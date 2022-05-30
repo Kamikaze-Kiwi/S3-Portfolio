@@ -89,8 +89,10 @@ In order to verify all software engineers ethical values match up, it is importa
 In order to verify all software engineers ethical values match up, it is important for all parties involved to converse about the topic. Allowing everyone to share their ethical values and boundaries with one another makes it possible to create a working environment in which all parties involved can work comfortably.
 
 #### Which ethical aspects play a role in your project?
+One of the ethical aspects in our group project that we faced was the licensing of third party libraries(Highcharts). As our project lives in a gray area between commercial and non-profit (the organization is a business, while the application is strictly for internal use without any direct link to generating profit), we considered whether purchasing a license for these libraries would be necessary.
 
 #### Do you foresee ethical conflicts caused by your software? What kind of?
+I personally don't expect any ethical conflicts to be caused by our software, considering it's for internal use only and we don't even store any data about our users. Users also can't change anything within our application (like adding comments). The only thing our application does is show the user a temperature heatmap of the office.
 
 <br>
 
