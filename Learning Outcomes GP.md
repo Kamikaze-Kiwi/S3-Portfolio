@@ -66,11 +66,27 @@ We also have (atleast) a stand-up and a stand-down every day so we always know w
 
 #### What is ethics in software engineering?
 
+Ethics, as described by Oxford Languages, is a set of moral principles that govern the behaviour of a person or the conduction of an activity. Ethics are used to measure the righteousness of an action, acting as criteria for judging whether something is right or not. In the scope of software engineering, ethics dictate the values a software engineer should adhere to in a professional environment. This includes ethics related to cultural differences, software, source code and communication.
+
 ####  Why is ethics important in software engineering?
+
+Within the software engineering space, a number of widely used ethical guidelines can be found on the internet. One such guideline is the ACM Software Engineering Code of Ethics, which states that software engineers should strife to analyze, design, develop, test and maintain software in a truthful, upfront and professional manner for the better of public health, safety and welfare of humanity, according to the following eight principles:
+
+PUBLIC – Software engineers shall act consistently with the public interest.
+CLIENT AND EMPLOYER – Software engineers shall act in a manner that is in the best interests of their client and employer consistent with the public interest.
+PRODUCT – Software engineers shall ensure that their products and related modifications meet the highest professional standards possible.
+JUDGMENT – Software engineers shall maintain integrity and independence in their professional judgment.
+MANAGEMENT – Software engineering managers and leaders shall subscribe to and promote an ethical approach to the management of software development and maintenance.
+PROFESSION – Software engineers shall advance the integrity and reputation of the profession consistent with the public interest.
+COLLEAGUES – Software engineers shall be fair to and supportive of their colleagues.
+SELF – Software engineers shall participate in lifelong learning regarding the practice of their profession and shall promote an ethical approach to the practice of the profession.
 
 ####  What do you have to do as a software engineer to address ethical aspects in your work?
 
+In order to verify all software engineers ethical values match up, it is important for all parties involved to converse about the topic. Allowing everyone to share their ethical values and boundaries with one another makes it possible to create a working environment in which all parties involved can work comfortably.
+
 ####  How do you know that your ethical considerations match with those of other software engineers?
+In order to verify all software engineers ethical values match up, it is important for all parties involved to converse about the topic. Allowing everyone to share their ethical values and boundaries with one another makes it possible to create a working environment in which all parties involved can work comfortably.
 
 #### Which ethical aspects play a role in your project?
 
