@@ -99,13 +99,30 @@ I personally don't expect any ethical conflicts to be caused by our software, co
 ### Culture
 
 #### What is culture?
+Culture is everything from our language, food and clothing to our behaviour. Things that are considered normal in one culture might be considered rude or offensive in another one.
 
 #### Which are well-known dimensions on cultural differences?
+The 6 well-known culture dimensions of Hofstede are:
+
+- Power distance Power distance is the degree a society accepts or rejects the unequal distribution of power in organisations and society. In high power distance cultures such as Japan, we expect to find great respect for age, status and titles. This could create problems for an American visitor used to the informality of a more moderate power distance culture, and accustomed to using first names and casual dress in the office.
+
+- Uncertainty Avoidance Uncertainty avoidance is the degree a society tolerates or is uncomfortable with risk, change, and situational uncertainty. In high uncertainty avoidance cultures, such as France or Japan, one would expect to find a preference for structure, order and predictability.
+
+- Individualism-Collectivism Individualism-collectivism is the degree to which a society emphasises an individual’s accomplishments and self-interest, versus the accomplishments and interests of groups. In Hofstede’s data, the United States had the highest individualism score of any country.
+
+- Masculinity-Femininity Masculinity-femininity is the degree a society values assertiveness and materialism versus feelings, relationships, and quality of life. You might think of it as a tendency to emphasise stereotypical masculine or feminine traits and attitudes towards gender roles. Visitors to Japan, with the highest masculinity score in Hofstede’s research, will probably notice how restricted career opportunities can be for women.
+
+- Time Orientation This is the degree to which a society emphasises short-term or long-term goals. Americans are notorious for being impatient and wanting quick, even instant gratification. Accordingly, American companies are expected to achieve short-term results. Many Asian cultures are the opposite, valuing persistence, being patient, and are willing to work for long-term success.
+
+- Indulgence-Restraint The Indulgence dimension is a relatively new dimension to the model. This dimension is defined as the extent to which people try to control their desires and impulses, based on the way they were raised. Relatively weak control is called Indulgence and relatively strong control is called Restraint. Cultures can, therefore, be described as Indulgent or Restrained. Indulgence stands for a society that allows relatively free gratification of basic and natural human drives related to enjoying life and having fun. Restraint stands for a society that suppresses gratification of needs and regulates it by means of strict social norms.
+
+Source : Hofstede's cultural dimensions
 
 #### Can you give examples for cultural differences that you have experienced in your study or life? How do you explain these differences?
+One big cultural difference I experienced over the years by visiting countries during holidays is the time at which you eat dinner. Here in the Netherlands it's normal to eat between 17:00 to 18:00, while in countries like France and Spain that's mostly unheard of. In these countries they tend to eat much later, like after 19:00.
 
 #### What is your culture?
-
+My main culture is Dutch, but there is also some culture specific to the province and to the city which I live in. 
 <br>
 
 ## 6. Requirements and design
