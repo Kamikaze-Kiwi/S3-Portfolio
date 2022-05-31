@@ -23,7 +23,9 @@ My backend currently consists of 3 microservices. One that manages everything to
 
 
 ## 2. Software quality
-I tested everything in one of the microservices. I use endpoint tests to test wether the endpoints work and if I get back the correct status codes if I (for example) send the wrong data to the endpoint, to achieve this I use the MockMvc package included in SpringBoot. I also test the service (logic) layer. I also test the repository (data access) layer using an in-memory H2 database.
+I tested everything in one of the microservices. I use endpoint tests to test whether the endpoints work and if I get back the correct status codes if I (for example) send the wrong data to the endpoint, to achieve this I use the MockMvc package included in SpringBoot, this allows me to call endpoints as if they were actually hosted on a server, without actually running a local server. This drastically decreases the amount of time it takes to run the tests. I also test the service (logic) layer. I also test the repository (data access) layer using an in-memory H2 database.
+
+In addition to my own tests, I created a repository on sonarcloud
 
 ## 4. CI/CD
 
