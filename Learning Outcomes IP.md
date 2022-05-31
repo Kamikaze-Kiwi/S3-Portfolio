@@ -29,6 +29,17 @@ I decided to only properly check my software quality in one of my microservices.
 
 I chose not to create unit tests for my code, as there was not enough logic to create useful tests. Instead, I opted for integration tests to test the endpoints, logic and data access in one go.
 
+To be able to test the entire microservice, I had to mock the database and the endpoints. I mocked the database using an in-memory H2-database and I mocked the endpoints using [AutoConfigureMockMvc](https://docs.spring.io/spring-boot/docs/current/api/org/springframework/boot/test/autoconfigure/web/servlet/AutoConfigureMockMvc.html). Before every test runs, I reset the database and add 5 records to it, this way every test will always have the exact same environment.
+| ![IntegrationTestsReset](https://user-images.githubusercontent.com/84376526/171234647-ac3e3412-b2ea-4cbd-b2e7-0e87e0e9086d.png) |
+| :--: |
+| _^ The code that gets executed before and after each test._|
+
+I made a total of 10 tests. These tests cover the entirety of the microservice. They test both the happy and the bad flow, and most tests have multiple asserts. Down below are 2 examples of my tests (one happy and one bad flow).
+
+| ![IntegrationTestHappyFlow](https://user-images.githubusercontent.com/84376526/171235360-6ebdb2da-13a5-4611-ac15-e7ab8036c234.png) | ![IntegrationTestBadFlow](https://user-images.githubusercontent.com/84376526/171235379-8220f11b-ba50-4356-94a2-d3e6880099bf.png) |
+| :--: | :--: |
+| _^ This test performs a get request on 'BugReports/get' with an id of 1 to test whether we get a response and if this reponse returns the bugreport with id 1._ | _^ This test also performs a get request on 'BugReports/get', but instead supplies an id of a non-existing bugreport. It tests whether a response of 400 is returned and it also makes sure we don't actually receive any data._ |
+
 #
 
 In addition to my own tests, I created a project on sonarcloud to automatically scan the entire codebase for one of my microservices. This report can be found [here](https://sonarcloud.io/project/overview?id=MaikelHendrikx1_bugreport). Sonarcloud automatically performs a scan everytime I push to the main branch on Github.
