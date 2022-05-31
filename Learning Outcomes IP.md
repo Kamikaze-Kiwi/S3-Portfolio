@@ -25,7 +25,9 @@ My backend currently consists of 3 microservices. One that manages everything to
 
 
 ## 2. Software quality
-I tested everything in one of the microservices. I use endpoint tests to test whether the endpoints work and if I get back the correct status codes if I (for example) send the wrong data to the endpoint, to achieve this I use the MockMvc package included in SpringBoot, this allows me to call endpoints as if they were actually hosted on a server, without actually running a local server. This drastically decreases the amount of time it takes to run the tests. I also test the service (logic) layer. I also test the repository (data access) layer using an in-memory H2 database.
+I decided to only properly check my software quality in one of my microservices. I did this because otherwise I would be spending a lot of time doing the exact same thing multiple times, and I can still learn about and apply all the software quality principles. I chose for my BugReport microservice, as it has the most code and also because I paid more attention to software quality and error handling in this microservice.
+
+I chose not to create unit tests for my code, as there was not enough logic to create useful tests. Instead, I opted for integration tests to test the endpoints, logic and data access in one go.
 
 #
 
