@@ -11,6 +11,8 @@
 ## 1. Web application
 
 ### User friendly:
+Before creating the views, I created some screen designs. This allowed me to easily drag parts around until I was content with the result.
+
 | ![Schets](https://user-images.githubusercontent.com/84376526/169283094-832a330c-2ac4-4685-853b-e7e9d48648a0.png) |
 | :--: |
 | ^ A first design I made for the bugger page view, along with the navbar. |
@@ -25,7 +27,15 @@ My backend currently consists of 3 microservices. One that manages everything to
 ## 2. Software quality
 I tested everything in one of the microservices. I use endpoint tests to test whether the endpoints work and if I get back the correct status codes if I (for example) send the wrong data to the endpoint, to achieve this I use the MockMvc package included in SpringBoot, this allows me to call endpoints as if they were actually hosted on a server, without actually running a local server. This drastically decreases the amount of time it takes to run the tests. I also test the service (logic) layer. I also test the repository (data access) layer using an in-memory H2 database.
 
-In addition to my own tests, I created a project on sonarcloud to automatically scan the entire codebase for one of my microservices. This report can be found [here](https://sonarcloud.io/project/overview?id=MaikelHendrikx1_bugreport)
+In addition to my own tests, I created a project on sonarcloud to automatically scan the entire codebase for one of my microservices. This report can be found [here](https://sonarcloud.io/project/overview?id=MaikelHendrikx1_bugreport).
+
+Sonarcloud shows me security issues, vulnerabilites and code smells. When I press these it shows me why it's an issue and what I can do to fix it. In the example below, Sonarcloud reported a security issue with my application. This had to do with the fact that one of my API endpoints allowed every crossorigin policy. In my case, this was supposed to be happen, as this endpoint should be publicly accessable. I reviewed the security hotspot and set it's status to 'safe'. I then also added a comment explaining why it was safe in this case.
+| ![SonarcloudSecurityReview](https://user-images.githubusercontent.com/84376526/171207813-c430fd71-5958-4de6-bee6-be7c0620ebab.png) |
+| :--: |
+| _^ Screenshot of the report by Sonarcloud. Reviewed by me. The 'activity' feed at the bottom shows the steps I took to get rid of this report. This report can be seen in more detail [here](https://sonarcloud.io/project/security_hotspots?id=MaikelHendrikx1_bugreport&hotspots=AYEAfOCwcu6je62Ut3Ix)_ |
+
+Sonarcloud also found 2 vulnerabilities in my application. Both of these were the same issue, being the fact that I used persistent entities in my controllers instead of DTO's. This is a risk because it would be possible to send unexpected values into the database, as these persistent entities are linked to the database with Hibernate (an ORM). In this case I decided the best course of action was to fix this issue. 
+
 
 ## 4. CI/CD
 
