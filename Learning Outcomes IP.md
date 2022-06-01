@@ -23,6 +23,12 @@ As explained in more detail in [Technology choices](README.md#technology-choices
 
 My backend currently consists of 3 microservices. One that manages everything to do with authentication and authorization, one that manages everything to do with bugreports and another one that manages everything to do with buggerpages. All of these microservices contain an entity, a controller which handles incoming API calls, a service which manages all the logic and a repository which handles all the database stuff.
 
+
+
+| ![VueComponents](https://user-images.githubusercontent.com/84376526/171408014-27c3e85e-715e-4401-bda4-40a82489c785.png) |
+| :--: |
+| _^ These are the components that I have made for my frontend._|
+
 {insert video showcasing frontend}
 
 
