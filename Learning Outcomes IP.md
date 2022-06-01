@@ -73,7 +73,20 @@ For my continuous integration I created a workflow with Github actions which aut
 
 I also added continuous integration to all of my microservices. I initially wanted to publish the application to an actual server, like on Azure or AWS. I eventually decided against this, though, as I already used a lot of my Azure credit on hosting databases. I instead went with Docker Hub. To upload to Docker Hub I have to be able to run my application within a docker image. For this I created a dockerfile.
 
+| ![dockerfile](https://user-images.githubusercontent.com/84376526/171396851-37569cc3-fab2-416e-a7ab-72ec6360b54e.png) |
+| :--: |
+| _^ The dockerfile used to run my Java springboot application in a docker image._ |
 
+| ![GithubActionsDockerPublish](https://user-images.githubusercontent.com/84376526/171398115-c4906ba5-bcd6-45b4-b884-6b99d7c0bd4f.png) |
+| :--: |
+| _^ The Github action to build a docker image and publish it to Docker Hub. This job depends on the test job, meaning if it fails, it will not attempt to publish it._ |
 
+The docker repositories for each of my microservices can be found here:
+
+https://hub.docker.com/repository/docker/maikelhendrikx/bugreport
+
+https://hub.docker.com/repository/docker/maikelhendrikx/buggerpage
+
+https://hub.docker.com/repository/docker/maikelhendrikx/account
 
 ## 8. Professional
