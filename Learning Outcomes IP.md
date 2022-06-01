@@ -34,7 +34,7 @@ To be able to test the entire microservice, I had to mock the database and the e
 | :--: |
 | _^ The code that gets executed before and after each test._|
 
-I made a total of 10 tests. These tests cover the entirety of the microservice. They test both the happy and the bad flow, and most tests have multiple asserts. Down below are 2 examples of my tests (one happy and one bad flow).
+I made a total of 13 tests. These tests cover the entirety of the microservice. They test both the happy and the bad flow, and most tests have multiple asserts. Down below are 2 examples of my tests (one happy and one bad flow).
 
 | ![IntegrationTestHappyFlow](https://user-images.githubusercontent.com/84376526/171235360-6ebdb2da-13a5-4611-ac15-e7ab8036c234.png) | ![IntegrationTestBadFlow](https://user-images.githubusercontent.com/84376526/171235379-8220f11b-ba50-4356-94a2-d3e6880099bf.png) |
 | :--: | :--: |
@@ -56,5 +56,24 @@ Sonarcloud also found 2 vulnerabilities in my application. Both of these were th
 | _^ Screenshot of the Main branch status and evolution. You can see that I got rid of 2 vulnerabilities and 1 security hotspot. (we don't talk about the code smells 🤐). More details can be found [here](https://sonarcloud.io/project/overview?id=MaikelHendrikx1_bugreport)._ |
 
 ## 4. CI/CD
+
+For my continuous integration I created a workflow with Github actions which automatically builds and tests the solution. I did this for every microservice.
+| ![GithubActionsBuildAndTest](https://user-images.githubusercontent.com/84376526/171378736-0997cca0-e535-47cf-b159-ebe156e9f22e.png) |
+| :--: |
+| _^ This is the yaml code that runs on every push to the master branch. It first checks out the code, and then sets up java 17. After this it runs `mvn -B package --file pom.xml`, which runs and tests the code._ |
+
+| ![CiTestSuccess](https://user-images.githubusercontent.com/84376526/171381017-3e3f84b5-7cfa-4e95-9d06-dad4b1086d78.png) |
+| :--: | 
+| _^ This is what it looks like when **all** tests succeed._ |
+
+| ![CiTestFail](https://user-images.githubusercontent.com/84376526/171381295-8140cd8a-bb88-49b8-ad88-cdd0eaf197a0.png) |
+| :--: | 
+| _^ This is what it looks like when any test fails._ |
+
+
+I also added continuous integration to all of my microservices. I initially wanted to publish the application to an actual server, like on Azure or AWS. I eventually decided against this, though, as I already used a lot of my Azure credit on hosting databases. I instead went with Docker Hub. To upload to Docker Hub I have to be able to run my application within a docker image. For this I created a dockerfile.
+
+
+
 
 ## 8. Professional
