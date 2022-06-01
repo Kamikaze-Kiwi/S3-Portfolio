@@ -23,6 +23,8 @@ As explained in more detail in [Technology choices](README.md#technology-choices
 
 My backend currently consists of 3 microservices. One that manages everything to do with authentication and authorization, one that manages everything to do with bugreports and another one that manages everything to do with buggerpages. All of these microservices contain an entity, a controller which handles incoming API calls, a service which manages all the logic and a repository which handles all the database stuff.
 
+{insert video showcasing frontend}
+
 
 ## 2. Software quality
 I decided to only properly check my software quality in one of my microservices. I did this because otherwise I would be spending a lot of time doing the exact same thing multiple times, and I can still learn about and apply all the software quality principles. I chose for my BugReport microservice, as it has the most code and also because I paid more attention to software quality and error handling in this microservice.
