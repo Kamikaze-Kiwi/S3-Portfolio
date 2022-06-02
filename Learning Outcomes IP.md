@@ -118,3 +118,8 @@ https://hub.docker.com/repository/docker/maikelhendrikx/buggerpage
 https://hub.docker.com/repository/docker/maikelhendrikx/account
 
 ## 8. Professional
+
+| ![image](https://user-images.githubusercontent.com/84376526/171623428-a2591655-d303-4696-b154-39a27bcf4dbb.png) |
+| :--: |
+| _^ A screenshot of my feedpulse graph aswell as the latest feedpulse._ |
+
