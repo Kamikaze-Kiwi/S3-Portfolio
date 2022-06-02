@@ -23,6 +23,26 @@ As explained in more detail in [Technology choices](README.md#technology-choices
 
 My backend currently consists of 3 microservices. One that manages everything to do with authentication and authorization, one that manages everything to do with bugreports and another one that manages everything to do with buggerpages. All of these microservices contain an entity, a controller which handles incoming API calls, a service which manages all the logic and a repository which handles all the database stuff.
 
+| ![Controller](https://user-images.githubusercontent.com/84376526/171581658-c1f11bd2-125b-49d5-9735-a8cd11fc5876.png) |
+| :--: |
+| _^ An example of part of my controller in the bug report microservice._ |
+
+| ![ControllerSwagger](https://user-images.githubusercontent.com/84376526/171582870-52ee3035-b3a2-46be-99d5-e0c4b7a80e45.png) |
+| :--: |
+| _^ The bug report microservice in Swagger. 'bug-report-controller' is only accessable by select origins, while 'bug-report-public-controller' is accessable from anywhere._ |
+
+Down below I will show the process of the most elaborate 'route' you can take through my application.
+
+You start by generating a public access key for your buggerpage (this has not been implemented in the frontend yet):
+![image](https://user-images.githubusercontent.com/84376526/171620144-1e249a9f-c38b-4749-8de1-e69e44078efe.png)
+
+If you supplied the correct email and password for the buggerpage, it will generate a new key in the backend and return it. After this, there is no way to retrieve this key ever again, so if you forget it you will have to regenerate it. (I did this for security reasons, not because I'm lazy ;)). 
+
+It's now possible to create bugreports from outside the bugger environment, by calling the public API endpoint with this key, for example with this sample project (which developers can use to create bugger integration with very little effort.)
+
+![image](https://user-images.githubusercontent.com/84376526/171621594-3c1900f4-c230-4ff6-a2bc-68c2844b587b.png)
+
+this project sends an API call to the public API in the bugreport microservice. This method in the microservice will then call the buggerpage microservice to verify the correctness of the key. If this is true, a new bugreport will be created for this buggerpage.
 
 
 | ![VueComponents](https://user-images.githubusercontent.com/84376526/171408014-27c3e85e-715e-4401-bda4-40a82489c785.png) |
