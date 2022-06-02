@@ -31,7 +31,7 @@ My backend currently consists of 3 microservices. One that manages everything to
 | :--: |
 | _^ The bug report microservice in Swagger. 'bug-report-controller' is only accessable by select origins, while 'bug-report-public-controller' is accessable from anywhere._ |
 
-Down below I will show the process of the most elaborate 'route' you can take through my application.
+#### Down below I will show the process of the most elaborate 'route' you can take through my application.
 
 You start by generating a public access key for your buggerpage (this has not been implemented in the frontend yet):
 ![image](https://user-images.githubusercontent.com/84376526/171620144-1e249a9f-c38b-4749-8de1-e69e44078efe.png)
