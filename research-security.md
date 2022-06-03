@@ -9,6 +9,7 @@
     - [Peppering](#peppering)
     - [Encryption](#encryption)
 3. [How can we combat brute force attacks?](#how-can-we-combat-brute-force-attacks)
+    - [What does salting already do to counter brute force attacks?](#what-does-salting-already-do-to-counter-brute-force-attacks)
     - [How does brute forcing work?](#how-does-brute-forcing-work)
     - [How can we make it take longer for a hacker to attempt a password?](#how-can-we-make-it-take-longer-for-a-hacker-to-attempt-a-password)
     - [How can we increase the amount of possible password combinations the hacker will need to try?](#how-can-we-increase-the-amount-of-possible-password-combinations-the-hacker-will-need-to-try)
@@ -71,8 +72,6 @@ A salt is a randomly generated string added to the password before it is hashed.
 
 ^ What the database would look like now. Note that Jim and Tim now have different hashes, even though they have the same password. Now it is only possible to crack the passwords from this database by brute-forcing it. A hacker can test every possible password using the salt of one of the users, until the generated hash matches the hash in the database. John's password would be cracked within seconds, Jim and Tim's passwords will take a little longer and John's password will either never be cracked if the hacker did not include special characters in the brute force or after a decently long (but not crazy) amount of time. I will look into combatting brute force attacks [later](#combatting-brute-force-attacks).
 
-To speed up the brute force process, hackers can perform a dictionary attack instead. A dictionary attack does not try every possible password combination, but instead uses (for example) a literal dictionary containing every word in English along with variations on those words **or** a list of common passwords, like from the RockYou leak I mentioned earlier. Let's say the hacker uses a list of common passwords. Jim, Tim and John's passwords would be cracked very quickly while Bob's password will never be cracked. This is why it's important to have a unique password that's not just a (variation of) a word.
-
 <br>    
 <hr>
 
@@ -97,6 +96,10 @@ For this reason, it's ***almost*** always better to hash passwords instead of en
 ## How can we combat brute force attacks?
 
 ## How does brute forcing work?
+There are two ways hackers use brute force attacks. In the first one the hacker tries every possible password combination possible. This means the hacker will try every combination of all letters, uppercase letters, numbers, special characters ETC. This process takes extremely long, but it will eventually crack every single password in the system. Another way to do a brute force attack is also called a dictionary attack. With a dictionary attack, the hacker will only try certain passwords instead of trying every possible combination. To choose which passwords to try, the hacker might use a list of the most common passwords or all the passwords in previous password leaks. Alternatively, the hacker can use a program that attempts all the words in the (for example) English language, along with some variations of those words, like with numbers at the end.
+
+## What does salting already do to counter brute force attacks?
+Because we salt our passwords, the hacker will not be able to brute force all the passwords in one iteration of their brute forceing program, instead, they will have to restart it for each password.
 
 ## How can we make it take longer for a hacker to attempt a password?
 
@@ -114,4 +117,6 @@ Besides increasing the time it takes to try a single password, we can increase t
 
 
 # Conclusion
+
+After applying all these measures, our passwords are now completely safe. Not even the developer that implemented this account system will be able to retrieve the passwords. The only option that's left to retrieve the passwords now is to brute force it.
 
