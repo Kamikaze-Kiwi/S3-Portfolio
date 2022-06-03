@@ -13,6 +13,8 @@
     - [How can we make it take longer for a hacker to attempt a password?](#how-can-we-make-it-take-longer-for-a-hacker-to-attempt-a-password)
     - [How can we increase the amount of possible password combinations the hacker will need to try?](#how-can-we-increase-the-amount-of-possible-password-combinations-the-hacker-will-need-to-try)
 4. [At what point will the user not want to bother with the password requirements anymore?](#at-what-point-will-the-user-not-want-to-bother-with-the-password-requirements-anymore)
+5. [Conclusion](#conclusion)
+
 <br>    
 <hr>
 
@@ -20,7 +22,7 @@
 
 Having an extremely secure authentication system is extremely important. I could just use one of the many great authentication systems out there like Auth0 or oAuth2, however I want to know what goes on behind the scenes. Last semester I already made an authentication system, but I chose not to invest more than 10 minutes in the security. I hashed the password with Sha256 and that was it. When I pasted some of the hashes into Google, I could immediately see what the original password was, and something's telling me that's not quite as safe as it should be.
 
-To ensure that the methods I will use to handle the storing the passwords are ***really*** secure, we will assume that the hacker knows everything about my system and has access to the source code.
+To ensure that the methods I will use to handle the storing of passwords are ***really*** secure, we will assume that the hacker knows everything about my system and has access to the source code.
 
 <br>    
 <hr>
@@ -76,7 +78,7 @@ To speed up the brute force process, hackers can perform a dictionary attack ins
 
 ## Peppering
 
-Alongside the salt, it's also possible to add a pepper. A pepper is virtually the same as a salt, the only 2 differences being that a pepper is stored as a secret in the application instead of in the database, and that a pepper is not unique, so every hash will have the same pepper. The advantage to having a pepper in addition to a salt is that the pepper will remain secret even if a hacker has complete access to the database. (Assuming the hacker does not also have access to the application). However, for this research we are assuming that the hacker has complete access to the system, which includes this pepper. Adding a pepper will literally only take one line of code, so I will add it anyway.
+Alongside the salt, it's also possible to add a pepper. A pepper is virtually the same as a salt, the only 2 differences being that a pepper is stored as a secret in the application instead of in the database, and that a pepper is not unique, so every hash will have the same pepper. The advantage to having a pepper in addition to a salt is that the pepper will remain secret even if a hacker has complete access to the database. (Assuming the hacker does not also have access to the application). However, for this research we are assuming that the hacker has complete access to the system, which includes this pepper. Adding a pepper will literally only take one line of code, so it's still worth the effort.
 
 <br>    
 <hr>
@@ -86,7 +88,7 @@ Alongside the salt, it's also possible to add a pepper. A pepper is virtually th
 
 An alternative to hashing is encryption. The upside to encryption is that you can retrieve a password from the encrypted value, the downside to encryption is that a hacker can retrieve a password from the encrypted value (assuming they know the encryption algorithm and key).
 
-For this reason, it's ***almost*** always better to hash passwords instead of encrypting them. The one reason for using encryption is if your application **really** needs to be able to retrieve a user's password, for example a password manager.
+For this reason, it's ***almost*** always better to hash passwords instead of encrypting them. The one reason for using encryption is if your application **really** needs to be able to retrieve a user's password, for example a password manager. In any other case you should always refrain from using encryption for your passwords.
 
 <br>    
 <hr>
@@ -98,18 +100,18 @@ For this reason, it's ***almost*** always better to hash passwords instead of en
 
 ## How can we make it take longer for a hacker to attempt a password?
 
+To make it take longer for a hacker to attempt each password, we can increase the time it takes to compile the hash. We are already doing this by using a hashing algorithm that takes relatively long, but this is not enough to stop brute force hackers, especially as hardware gets faster and cheaper. To make it take even longer, we can repeat the hashing process multiple times, so after hashing the password, we will hash this hash again, and we will continue doing this until the hashing process takes long enough. If a hashing function normally takes about 0.1 seconds to execute, that means a hacker can test 10 passwords per second. If I do it with 10 iterations instead, the hacker can only test 1 password per second. The more iterations I do, the safer the passwords will be. But I have to find a balance between blocking hackers and giving the users a fast-working application. I personally went with 10 iterations as I found that it takes about a 800 ms (on my hardware) which seems like a good compromise. When hardware gets better in the future I can always increase the iterations.
+
 ## How can we increase the amount of possible password combinations the hacker will need to try?
 
-While there is no way to completely block brute force attacks, I can make it take *so* long to crack passwords that it just is not worth it.
+Besides increasing the time it takes to try a single password, we can increase the amount of passwords the hacker will need to try. If our program only requires letters and numbers, the hacker will probably decide not to include special characters in their brute force attack, which decreases the amount of possible password combinations drastically. By enforcing the users to create stronger passwords. I can force them to be a certain length, require capital and lowercase letters, require a number, require a special character, etc. I can also check if the user's entered password is within a list of the *n* most common passwords, although this is redundant if I am already forcing the usage of a special character, as the top 10000 most common passwords don't contain a single special character anyway. It's important to not go overboard with the password requirements however. This could mean users won't be able to remember their passwords, which could push users to either do the bare minimum for their password (like 'Password123!', which has a uppercase letter, lowercase letters, numbers and a special character, but is stil a very bad password). Users might also decide to come up with a good password, but store it themselves in an unsecure way. 
 
-#
+| ![test](https://cloudnine.com/wp-content/uploads/2020/02/CrackPassword2.png) |
+| :--: |
+| _^ In this table you can see the approximate time it would take for a brute force hacker to crack your password. It obviously depends on the hardware and on how long it takes to crack one password, but this does show how the time it takes to crack a password grows exponentially as the requirements increase._ |
 
-The first thing I can do is make it take longer to try a password.
+## At what point will the user not want to bother with the password requirements anymore?
 
-To achieve this, I can repeatedly call the hashing function, instead of just once, so I will first hash the password, then hash that hash, and do that over and over again. If a hashing function normally takes about 0.1 seconds to execute, that means a hacker can test 10 passwords per second. If I do it with 10 iterations instead, the hacker can only test 1 password per second. The more iterations I do, the safer the passwords will be. But I have to find a balance between blocking hackers and giving the users a fast-working application. I personally went with 10 iterations as I found that it takes about a 800 ms (on my hardware) which seems like a good compromise. When hardware gets better in the future I can always increase the iterations.
 
-#
+# Conclusion
 
-The second thing I can do is make it take more attempts before a password is cracked.
-
-This can be achieved simply by forcing users to use stronger passwords. I can force them to be a certain length, require capital and lowercase letters, require a number, require a special character, etc. I can also check if the user's entered password is within a list of the *n* most common passwords, although this is redundant if I am already forcing the usage of a special character, as the top 10000 most common passwords don't contain a single special character anyway.
