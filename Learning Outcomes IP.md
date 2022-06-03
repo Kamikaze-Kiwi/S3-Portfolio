@@ -15,7 +15,7 @@ Before creating the views, I created some screen designs. This allowed me to eas
 
 | ![Schets](https://user-images.githubusercontent.com/84376526/169283094-832a330c-2ac4-4685-853b-e7e9d48648a0.png) |
 | :--: |
-| ^ A first design I made for the bugger page view, along with the navbar. |
+| _^ A first design I made for the bugger page view, along with the navbar._ |
 
 
 ### Full-stack
@@ -42,14 +42,15 @@ It's now possible to create bugreports from outside the bugger environment, by c
 
 ![image](https://user-images.githubusercontent.com/84376526/171621594-3c1900f4-c230-4ff6-a2bc-68c2844b587b.png)
 
-this project sends an API call to the public API in the bugreport microservice. This method in the microservice will then call the buggerpage microservice to verify the correctness of the key. If this is true, a new bugreport will be created for this buggerpage.
+This project sends an API call to the public API in the bugreport microservice. This method in the microservice will then call the buggerpage microservice to verify the correctness of the key. If this is true, a new bugreport will be created for this buggerpage. you can then view this bug report in the vue frontend.
 
+![image](https://user-images.githubusercontent.com/84376526/171833520-7bbd6922-83ba-4145-b5ba-dc65bba1a7e1.png)
+
+#
 
 | ![VueComponents](https://user-images.githubusercontent.com/84376526/171408014-27c3e85e-715e-4401-bda4-40a82489c785.png) |
 | :--: |
 | _^ These are the components that I have made for my frontend._|
-
-{insert video showcasing frontend}
 
 
 ## 2. Software quality
