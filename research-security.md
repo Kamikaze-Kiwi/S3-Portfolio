@@ -3,13 +3,16 @@
 ## Table of contents
 
 1. [Introduction](#introduction)
-2. [Storing passwords](#storing-passwords)
+2. [What are the most common methods for securing passwords?](#what-are-the-most-common-methods-for-securing-passwords)
     - [Hashing](#hashing)
     - [Salting](#salting)
     - [Peppering](#peppering)
     - [Encryption](#encryption)
-3. [Combatting brute force attacks](#combatting-brute-force-attacks)
-    
+3. [How can we combat brute force attacks?](#how-can-we-combat-brute-force-attacks)
+    - [How does brute forcing work?](#how-does-brute-forcing-work)
+    - [How can we make it take longer for a hacker to attempt a password?](#how-can-we-make-it-take-longer-for-a-hacker-to-attempt-a-password)
+    - [How can we increase the amount of possible password combinations the hacker will need to try?](#how-can-we-increase-the-amount-of-possible-password-combinations-the-hacker-will-need-to-try)
+4. [At what point will the user not want to bother with the password requirements anymore?](#at-what-point-will-the-user-not-want-to-bother-with-the-password-requirements-anymore)
 <br>    
 <hr>
 
@@ -22,7 +25,7 @@ To ensure that the methods I will use to handle the storing the passwords are **
 <br>    
 <hr>
 
-## Storing passwords
+## What are the most common methods for securing passwords?
 
 Storing passwords in plaintext is obviously a no-go. If anyone got access to the login table in your database, they would instantly know everyone's login. Naturally, you could just make your database very secure, but there's only so much you can do. You can protect against SQL-injection, but you can't do much about vulnerabilities within your database engine, rogue employees or an unsuspecting employee falling for a phishing mail. Just ask a company called RockYou, which suffered a database-breach due to an unpatched SQL vulerability. Their passwords were stored in plaintext, and as a result, over 32 million passwords were leaked. <sup>[[RockYou hack: from bad to worse]](https://techcrunch.com/2009/12/14/rockyou-hack-security-myspace-facebook-passwords/)</sup>
 
@@ -89,7 +92,13 @@ For this reason, it's ***almost*** always better to hash passwords instead of en
 <hr>
 
 
-## Combatting brute force attacks
+## How can we combat brute force attacks?
+
+## How does brute forcing work?
+
+## How can we make it take longer for a hacker to attempt a password?
+
+## How can we increase the amount of possible password combinations the hacker will need to try?
 
 While there is no way to completely block brute force attacks, I can make it take *so* long to crack passwords that it just is not worth it.
 
