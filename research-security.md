@@ -14,6 +14,7 @@
     - [How can we increase the amount of possible password combinations the hacker will need to try?](#how-can-we-increase-the-amount-of-possible-password-combinations-the-hacker-will-need-to-try)
 4. [At what point will the user not want to bother with the password requirements anymore?](#at-what-point-will-the-user-not-want-to-bother-with-the-password-requirements-anymore)
 5. [Conclusion](#conclusion)
+6. [Sources](#sources)
 
 <br>    
 <hr>
@@ -22,7 +23,7 @@
 
 Having an extremely secure authentication system is extremely important. I could just use one of the many great authentication systems out there like Auth0 or oAuth2, however I want to know what goes on behind the scenes. Last semester I already made an authentication system, but I chose not to invest more than 10 minutes in the security. I hashed the password with Sha256 and that was it. When I pasted some of the hashes into Google, I could immediately see what the original password was, and something's telling me that's not quite as safe as it should be.
 
-To ensure that the methods I will use to handle the storing of passwords are ***really*** secure, we will assume that the hacker knows everything about my system and has access to the source code.
+To ensure that the methods I will use to handle the storing of passwords are ***really*** secure, we will assume that the hacker knows everything about the system and has access to the source code.
 
 <br>    
 <hr>
@@ -59,6 +60,8 @@ There are 2 main libraries in Java for using Argon2. Argon2-jvm and the built in
 ## Salting
 
 A salt is a randomly generated string added to the password before it is hashed. This salt is then also stored in the database along with the hashed password. This makes rainbow tables completely useless. An added bonus is that if multiple users have the same password, they will still have a different hash.
+
+In Java, it's easy to generate a salt using `secureRandom.nextBytes(salt);`, where salt is an empty byte array. 
 
 #
 
@@ -99,7 +102,7 @@ There are two ways hackers use brute force attacks. In the first one the hacker 
 
 ## How can we make it take longer for a hacker to attempt a password?
 
-To make it take longer for a hacker to attempt each password, we can increase the time it takes to compile the hash. We are already doing this by using a hashing algorithm that takes relatively long, but this is not enough to stop brute force hackers, especially as hardware gets faster and cheaper. To make it take even longer, we can repeat the hashing process multiple times, so after hashing the password, we will hash this hash again, and we will continue doing this until the hashing process takes long enough. If a hashing function normally takes about 0.1 seconds to execute, that means a hacker can test 10 passwords per second. If I do it with 10 iterations instead, the hacker can only test 1 password per second. The more iterations I do, the safer the passwords will be. But I have to find a balance between blocking hackers and giving the users a fast-working application. I personally went with 10 iterations as I found that it takes about a 800 ms (on my hardware) which seems like a good compromise. When hardware gets better in the future I can always increase the iterations.
+To make it take longer for a hacker to attempt each password, we can increase the time it takes to compile the hash. We are already doing this by using a hashing algorithm that takes relatively long, but this is not enough to stop brute force hackers, especially as hardware gets faster and cheaper. To make it take even longer, we can repeat the hashing process multiple times, so after hashing the password, we will hash this hash again, and we will continue doing this until the hashing process takes long enough. If a hashing function normally takes about 0.1 seconds to execute, that means a hacker can test 10 passwords per second. If I do it with 10 iterations instead, the hacker can only test 1 password per second. The more iterations I do, the safer the passwords will be. But I have to find a balance between blocking hackers and giving the users a fast-working application. I personally went with 10 iterations as I found that it takes about a 800 ms (on my hardware) which seems like a good compromise. When hardware gets better in the future it is always possible to increase the iterations.
 
 ## How can we increase the amount of possible password combinations the hacker will need to try?
 
@@ -114,5 +117,10 @@ Besides increasing the time it takes to try a single password, we can increase t
 
 # Conclusion
 
-After applying all these measures, our passwords are now completely safe. Not even the developer that implemented this account system will be able to retrieve the passwords. The only option that's left to retrieve the passwords now is to brute force it.
+After applying all these measures, our passwords are now completely safe. Not even the developer that implemented this account system will be able to retrieve the passwords. The only option that's left to retrieve the passwords now is to brute force it, which we have made not unfeasible. Users with common passwords are still at risk of having their password be cracked.
+
+# Sources
+- https://www.vaadata.com/blog/how-to-securely-store-passwords-in-database/
+- https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html
+- https://www.password-hashing.net/
 
