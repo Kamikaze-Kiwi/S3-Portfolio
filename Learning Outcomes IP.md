@@ -124,3 +124,10 @@ https://hub.docker.com/repository/docker/maikelhendrikx/account
 | :--: |
 | _^ A screenshot of my feedpulse graph aswell as the latest feedpulse._ |
 
+I made use of Trello to track my progress and so I would always know how much I have left to do and what I could do next.
+| ![Trello](https://user-images.githubusercontent.com/84376526/171999386-20dee924-8a7b-48af-96de-6b4b078e17a1.png) |
+| :--: |
+| _^ The Trello board I created for my individual project, it can be viewed [here](https://trello.com/b/xMfTvtMN/bugger)._|
+
+
+
