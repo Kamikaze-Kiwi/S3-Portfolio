@@ -125,6 +125,24 @@ One big cultural difference I experienced over the years by visiting countries d
 My main culture is Dutch, but there is also some culture specific to the province and to the city which I live in. 
 <br>
 
+### Game
+We (Liang, Rens, Rick and me) played the game offered in the Canvas course. These are the scores we achieved at the end of the game:
+Maikel : 121
+Rick   : 114
+Liang  : 113
+Rens   : 112
+
+Down below I will answer the questions at the end of the game, to reflect on it.
+
+- What insights and learnings did you have while playing the game? 
+- Which of these could you immediately apply to your job or your relationships with others? 
+- How did playing the game bring out the cultural values of the players, e.g., did you compete or collaborate? What kind of culture did your team become? 
+- What are some consequences you see as a result of playing this game? What next steps will you take? 
+- What would you like to know more about? Are there cards you would like to discuss further? 
+
+
+<br>
+
 ## 6. Requirements and design
 We asked for feedback on our products to ensure we created something which is as close as possible to whatever the stakeholder envisioned. We applied this feedback to better our products. We try to have a meeting with the stakeholder once a week, this means that we get constant feedback on our products which ensures we never spend a lot of time on something that the stakeholder doesn't like.
 
