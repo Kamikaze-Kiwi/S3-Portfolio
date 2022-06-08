@@ -117,7 +117,7 @@ Besides increasing the time it takes to try a single password, we can increase t
 
 # Conclusion
 
-After applying all these measures, our passwords are now completely safe. Not even the developer that implemented this account system will be able to retrieve the passwords. The only option that's left to retrieve the passwords now is to brute force it, which we have made not unfeasible. Users with common passwords are still at risk of having their password be cracked.
+After applying all these measures, our passwords are now completely safe. Not even the developer that implemented this account system will be able to retrieve the passwords. The only option that's left to retrieve the passwords now is to brute force it, which we have made unfeasible. Users with common passwords are still at risk of having their password be cracked.
 
 # Sources
 - https://www.vaadata.com/blog/how-to-securely-store-passwords-in-database/
