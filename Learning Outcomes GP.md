@@ -127,19 +127,31 @@ My main culture is Dutch, but there is also some culture specific to the provinc
 
 ### Game
 We (Liang, Rens, Rick and me) played the game offered in the Canvas course. These are the scores we achieved at the end of the game:
-Maikel : 121
-Rick   : 114
-Liang  : 113
-Rens   : 112
+
+|    Name    |Score|
+|------------|-----|
+| **Maikel** | 121 |
+| **Rick**   | 114 |
+| **Liang**  | 113 |
+| **Rens**   | 112 |
 
 Down below I will answer the questions at the end of the game, to reflect on it.
 
-- What insights and learnings did you have while playing the game? 
-- Which of these could you immediately apply to your job or your relationships with others? 
-- How did playing the game bring out the cultural values of the players, e.g., did you compete or collaborate? What kind of culture did your team become? 
-- What are some consequences you see as a result of playing this game? What next steps will you take? 
-- What would you like to know more about? Are there cards you would like to discuss further? 
+- **What insights and learnings did you have while playing the game?** 
 
+    I learned a lot about other cultures, specifically how different cultures can act differently in the same situation. This has made me more understanding of certain other cultures, and I believe it will be less likely for me to accidentally cause a disagreement if I were to work together with people from other cultures.
+- **Which of these could you immediately apply to your job or your relationships with others?** 
+
+    Before I did this quiz, if a vietnamese person were on the phone with me, and they suddenly hang up without saying goodbye, I would assume they were either angry with me or the connection was lost. Now I know that ending a call like that is perfectly normal in Vietnam, so there is no risk of a disagreement happening between us because of a suddenly ended phone call anymore.
+- **How did playing the game bring out the cultural values of the players, e.g., did you compete or collaborate? What kind of culture did your team become?** 
+
+    We mostly agreed on most questions, but we did have a discussion on the question about your Polish coworkers calling you Dr. Kim instead of Dr. Park. I assumed that First names and surnames were the same in Asia as they were in the Western world, however Liang taught me that names in large parts of Asia are actually flipped, so their family name often comes before their own name.
+- **What are some consequences you see as a result of playing this game? What next steps will you take?**
+ 
+    I got more accepting and knowledgeable about other cultures. I will continue being curious and careful when it comes to other cultures, to ensure I don't accidentally offend someone.
+- **What would you like to know more about? Are there cards you would like to discuss further?**
+ 
+    I would like to know more things that are considered normal in the Netherlands but could be seen as offensive in other cultures (and vice versa.)
 
 <br>
 
