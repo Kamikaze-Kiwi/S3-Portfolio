@@ -12,7 +12,6 @@
     - [How does brute forcing work?](#how-does-brute-forcing-work)
     - [How can we make it take longer for a hacker to attempt a password?](#how-can-we-make-it-take-longer-for-a-hacker-to-attempt-a-password)
     - [How can we increase the amount of possible password combinations the hacker will need to try?](#how-can-we-increase-the-amount-of-possible-password-combinations-the-hacker-will-need-to-try)
-4. [At what point will the user not want to bother with the password requirements anymore?](#at-what-point-will-the-user-not-want-to-bother-with-the-password-requirements-anymore)
 5. [Conclusion](#conclusion)
 6. [Sources](#sources)
 
@@ -111,8 +110,6 @@ Besides increasing the time it takes to try a single password, we can increase t
 | ![test](https://cloudnine.com/wp-content/uploads/2020/02/CrackPassword2.png) |
 | :--: |
 | _^ In this table you can see the approximate time it would take for a brute force hacker to crack your password. It obviously depends on the hardware and on how long it takes to crack one password, but this does show how the time it takes to crack a password grows exponentially as the requirements increase._ |
-
-## At what point will the user not want to bother with the password requirements anymore?
 
 
 # Conclusion
