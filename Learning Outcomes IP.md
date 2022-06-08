@@ -38,7 +38,7 @@ You start by generating a public access key for your buggerpage (this has not be
 
 If you supplied the correct email and password for the buggerpage, it will generate a new key in the backend and return it. After this, there is no way to retrieve this key ever again, so if you forget it you will have to regenerate it. (I did this for security reasons, not because I'm lazy ;)). 
 
-It's now possible to create bugreports from outside the bugger environment, by calling the public API endpoint with this key, for example with this sample project (which developers can use to create bugger integration with very little effort.)
+It's now possible to create bugreports from outside the bugger environment, by calling the public API endpoint with this key, for example with this sample project (which developers can use to create bugger integration with very little effort, this sample project was made using Winforms.)
 
 ![image](https://user-images.githubusercontent.com/84376526/171621594-3c1900f4-c230-4ff6-a2bc-68c2844b587b.png)
 
