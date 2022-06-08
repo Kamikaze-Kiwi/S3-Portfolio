@@ -21,6 +21,8 @@ Before creating the views, I created some screen designs. This allowed me to eas
 ### Full-stack
 As explained in more detail in [Technology choices](README.md#technology-choices), I chose JAVA with SpringBoot for my backend and Vue for my frontend.
 
+My C4 models can be found [here](README.md#c4-models).
+
 My backend currently consists of 3 microservices. One that manages everything to do with authentication and authorization, one that manages everything to do with bugreports and another one that manages everything to do with buggerpages. All of these microservices contain an entity, a controller which handles incoming API calls, a service which manages all the logic and a repository which handles all the database stuff.
 
 | ![Controller](https://user-images.githubusercontent.com/84376526/171581658-c1f11bd2-125b-49d5-9735-a8cd11fc5876.png) |
