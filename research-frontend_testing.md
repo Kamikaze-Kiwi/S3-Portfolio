@@ -28,24 +28,24 @@ Vue test utils allows things like mounting and emits, which are a vital part of 
 ### Which test runner should we use for this framework?
 
 #### Vitest
-Vitest is a fast, Vite-specific test runner. It comes pre-installed with the Vue installation
+Vitest is a fast, Vite-specific test runner. It comes pre-installed with the Vue installation and has good documentation. It also supports a lot of different Javascript frameworks like Vue, Svelte and React, along with NextJs, Ruby and more. Vitest also supplies an optional UI for your test in addition to using the CLI and it also provides a lot of mocking tools, like the ability to mock the system date/time.
 
 #### Jest
-Jest is the biggest Javascript test runner out there. It's also the test runner recommended by Vue Test Utils.
-
-#### Mocha
+Jest is the most popular Javascript test runner out there. It's also the test runner recommended by Vue Test Utils. Jest, just like Vitest, works with a lot of Javascript frameworks like React, Angular and Vue.
 
 #### Jasmine
+Jasmine's documentation is a bit confusing and I had a hard time finding any useful info. It also does not tell you the benefits of using Jasmine instead of other runners.
 
 #### Karma
+Karma is supported by Vue Test Utils. Vue Test Utils recommends (if you choose Karma), that Mocha for writing the tests, Chai for the assertions and Sinon for creating Spies and Stubs. This is a lot of extra effort and has a much larger potential of causing conflicts. The documentation is alright, though.
 
 ### Bonus: Google lighthouse
-Google lighthouse is a tool which can be found in the dev tools. It can generate a report to show performance, accesibility, best practises and search engine optimization issues within your webpage. It's very easy to use, as it can scan a page with just a press of a button, with no installation or research needed. Google lighthouse is compatible with this project (it should be compatible with every website anyway). While the results of these tests are not the most useful, there is no set up required so it's still worth it to run it occasionally.
+Google lighthouse is a tool which can be found in Chrome dev tools. It can generate a report to show performance, accesibility, best practises and search engine optimization issues within your webpage. It's very easy to use, as it can scan a page with just a press of a button, with no installation or research needed. Google lighthouse is compatible with this project (it should be compatible with every website anyway). While the results of these tests are not the most useful, there is no set up required so it's still worth it to run it occasionally.
 
 ## Which framework is the best choice for this project? 
-
-## What sub-modules exist for this framework? Are they useful for this project?
+Vitest and Jest are the two main contenders, but Vitest seems like it just has a few extra nifty features and has the benefit of being pre-installed. It's also possible to use Jest within Vitest, so we don't have to completely drop Jest.
 
 ## Which parts of the application should we test?
+### 
 
 ## Conclusion
