@@ -73,6 +73,21 @@ I made a total of 13 tests. These tests cover the entirety of the microservice. 
 
 #
 
+I also created some frontend tests using Vitest and vue test-utils.
+
+| ![image](https://user-images.githubusercontent.com/84376526/173037188-65a00847-2f1c-4366-b8bf-113cc0679b8f.png) |
+| :--: | 
+| _^ A simple test to test that when the user is logged in, there should be a logout button and a profile button and no login button and no register button. There is also a test which tests the opposite when there is no user logged in._ |
+
+
+| ![VueTestPassed](https://user-images.githubusercontent.com/84376526/173038068-17651820-3dcc-4466-bf24-6d7b640bffa4.png) | ![VueTestFailed](https://user-images.githubusercontent.com/84376526/173038026-f5437999-a342-4246-9c1c-d172333b9b3c.png) |
+| :--: | :--: |
+| _^ What it looks like when all tests pass._ | _^ What it looks like when one or more test fails._ |
+
+
+
+#
+
 In addition to my own tests, I created a project on sonarcloud to automatically scan the entire codebase for one of my microservices. This report can be found [here](https://sonarcloud.io/project/overview?id=MaikelHendrikx1_bugreport). Sonarcloud automatically performs a scan everytime I push to the main branch on Github.
 
 Sonarcloud shows me, among other things; security issues, vulnerabilites, bugs and code smells. When I press these it shows me why it's an issue and what I can do to fix it. In the example below, Sonarcloud reported a security issue with my application. This had to do with the fact that one of my API endpoints allowed every crossorigin policy. In my case, this was supposed to be happen, as this endpoint should be publicly accessable. I reviewed the security hotspot and set it's status to 'safe'. I then also added a comment explaining why it was safe in this case.
