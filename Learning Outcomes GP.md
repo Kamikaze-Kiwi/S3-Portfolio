@@ -156,7 +156,7 @@ Down below I will answer the questions at the end of the game, to reflect on it.
     I got more accepting and knowledgeable about other cultures. I will continue being curious and careful when it comes to other cultures, to ensure I don't accidentally offend someone.
 - **What would you like to know more about? Are there cards you would like to discuss further?**
  
-    I would like to know more things that are considered normal in the Netherlands but could be seen as offensive in other cultures (and vice versa.)
+    I would like to know more things that are considered normal in the Netherlands but could be seen as offensive in other cultures (and vice versa.).
 
 <br>
 
@@ -183,6 +183,8 @@ We eventually agreed on a simple dropdown containing all the floors, with 2 butt
 | ![Business process](https://user-images.githubusercontent.com/84376526/169815643-b14fc448-b26b-4365-bfe7-6d9445a06598.png) |
 | :--: |
 | _^ The business process for a hypothetical order picking process. We chose this hypothetical process because we found it difficult to visualize a process for our group project. After discussing this with Marc we came to the conclusion that we should use another business or a hypothetical business to visualize a process instead. We chose an order picking business because Rens does orderpicking for his job, while Rick is creating an orderpicking system for his individual project. <hr> We created this using Engage Process Modeler, as we already had experience with this tool from the first semester._ |
+
+Analyzing the business process is important because it allows you to see how the workflow in a company looks. This allows you to optimize said workflow by (for example) automating certain steps. It also allows you to link software to the workflow in other ways, for example, if there is a step where the employee checks in on a screen every morning and check out at the end of the day, you could get the amount of employees currently in the building. In our project this could be used to see if the amount of people that are in the building has a significant effect on the temperature.
 
 <br>
 
