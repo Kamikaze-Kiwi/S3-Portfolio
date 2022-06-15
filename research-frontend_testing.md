@@ -18,6 +18,7 @@
   * [Authorization](#authorization)
   * [Error handling](#error-handling)
 - [Conclusion](#conclusion)
+- [Sources](#sources)
 
 ## What is frontend testing?
 
@@ -75,3 +76,7 @@ Testing to ensure users get proper error messages is also important. You want yo
 
 ## Conclusion
 We found the best choice for frontend testing our Vue application (Vitest), as well as which kind of tests we should be writing. We also found that Google lighthouse can be a useful tool without any setup required.
+
+## Sources 
+https://www.netguru.com/blog/front-end-testing
+https://www.guru99.com/frontend-testing.html
