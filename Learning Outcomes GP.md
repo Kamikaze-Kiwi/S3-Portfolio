@@ -49,12 +49,11 @@ In the last few weeks I spent most of my time making the heatmap reactive:
 <br>
 
 ## 3. Agile method
-There are a lot of different agile methodologies, the most popular being Kanban and Scrum. These two are quite similar in that they both use a board with multiple columns (To Do, Doing and Done). The main difference between these is that Scrum splits the project into multiple sprints. There are also some less common methodologies, like Extreme Programming, Feature Driven Development, Dynamic Systems Development Method and Crystal. We decided to go with Scrum, because we were familiar with it and because we didn't want to dwell on this choice too long. Because our product owner uses Kanban in their company, he pushed us a little towards using it as well. Because of this we ended up with a kind of hybrid between the two systems.
+There are a lot of different agile methodologies, the most popular being Kanban and Scrum. These two are quite similar in that they both use a board with multiple columns (To Do, Doing and Done). The main difference between these is that Scrum splits the project into multiple sprints. There are also some less common methodologies, like Extreme Programming, Feature Driven Development, Dynamic Systems Development Method and Crystal. We decided to go with Scrum, because we were familiar with it and because we didn't want to dwell on this choice too long. Because our product owner uses Kanban in their company, he pushed us a little towards using it as well. Because of this we ended up with kind of a hybrid between the two systems.
 
 In the group project we use a [Notion](https://right-metacarpal-459.notion.site/Dashboard-S3-Groep-3-a0a557bce28b4c35ba0b1655da06f22f), which is an alternative to Trello. In here we have our roadmap, user stories, documents and more.
 
 Together with the product owner, we created a list of user stories and ordered them by importance. At the start of every sprint we pick a few of these and create cards from them, with each of them getting a definition of done.
-
 
 | ![User stories sample](https://user-images.githubusercontent.com/84376526/164202907-e209347f-5025-4966-9314-caedc814cf5c.png)   | ![notion roadmap sample](https://user-images.githubusercontent.com/84376526/164204103-0b2dc7c2-1c76-458f-ba72-f82149340b52.png)   |
 |------|------|
@@ -62,6 +61,8 @@ Together with the product owner, we created a list of user stories and ordered t
 <br>
 
 We also have (atleast) a stand-up and a stand-down every day so we always know what the other team members are currently working on and to review eachothers work. At the start of each sprint we select all the user stories that we want to work on for that sprint and divide them among us. At the end of each sprint we do a sprint review with the product owner and a sprint retrospective.
+
+In future projects, I want also want to make use of an Agile framework, but (in group projects) we will obviously have to discuss our methodology to ensure we end up using a methodology that everyone in the group is comfortable in.
 
 <br>
 
@@ -157,7 +158,7 @@ Down below I will answer the questions at the end of the game, to reflect on it.
 - **What would you like to know more about? Are there cards you would like to discuss further?**
  
     I would like to know more things that are considered normal in the Netherlands but could be seen as offensive in other cultures (and vice versa.).
-
+   
 <br>
 
 ## 6. Requirements and design
@@ -185,6 +186,8 @@ We eventually agreed on a simple dropdown containing all the floors, with 2 butt
 | _^ The business process for a hypothetical order picking process. We chose this hypothetical process because we found it difficult to visualize a process for our group project. After discussing this with Marc we came to the conclusion that we should use another business or a hypothetical business to visualize a process instead. We chose an order picking business because Rens does orderpicking for his job, while Rick is creating an orderpicking system for his individual project. <hr> We created this using Engage Process Modeler, as we already had experience with this tool from the first semester._ |
 
 Analyzing the business process is important because it allows you to see how the workflow in a company looks. This allows you to optimize said workflow by (for example) automating certain steps. It also allows you to link software to the workflow in other ways, for example, if there is a step where the employee checks in on a screen every morning and check out at the end of the day, you could get the amount of employees currently in the building. In our project this could be used to see if the amount of people that are in the building has any correlation to the temperature.
+
+In future projects I will want to discuss with the rest of the group whether it's worth it to analyse a business process very early on in the project (as it's more useful the earlier you do it).
 
 <br>
 
